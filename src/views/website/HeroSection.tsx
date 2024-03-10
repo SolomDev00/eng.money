@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className={`flex flex-col justify-center items-center pt-64 pb-12 text-center`}
+      className={`flex flex-col justify-center items-center pt-60 pb-12 text-center`}
     >
       <div className="video-background">
         <video autoPlay muted loop id="video-background">

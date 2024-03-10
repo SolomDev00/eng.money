@@ -5,6 +5,7 @@ import LogoDarkImg from "../../assets/logo02.webp";
 import Investment from "../../assets/investment.webp";
 import Recommend from "../../assets/recommend.webp";
 import Wallet from "../../assets/wallets.webp";
+import Megaphone from "../../assets/megaphone.png";
 import {
   Bars3BottomRightIcon,
   MegaphoneIcon,
@@ -135,7 +136,13 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                       >
                         <li>
                           <div className="icon-wrapper">
-                            <img src={Wallet} alt="Wallet" />
+                            <img
+                              style={{
+                                width: "87%",
+                              }}
+                              src={Wallet}
+                              alt="Wallet"
+                            />
                           </div>
                           <div className="item-title">
                             <h3>{t("navbar.wallet")}</h3>
@@ -149,7 +156,11 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                       >
                         <li>
                           <div className="icon-wrapper">
-                            <MegaphoneIcon />
+                            {i18n.language === "en" ? (
+                              <MegaphoneIcon />
+                            ) : (
+                              <img src={Megaphone} alt="marketing" />
+                            )}
                           </div>
                           <div className="item-title">
                             <h3>{t("navbar.marketing")}</h3>

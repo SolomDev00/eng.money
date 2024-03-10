@@ -157,11 +157,13 @@ body {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  row-gap: 1.2rem;
   padding: 0.75rem;
 }
 
 .list-items-with-description li {
   display: flex;
+  align-items: center;
   gap: 1rem;
   width: 100%;
 }
@@ -191,6 +193,10 @@ body {
   min-height: 3rem;
   pointer-events: all;
   background-color: var(--gray-menu-button-hover);
+}
+
+.list-items-with-description li .icon-wrapper img {
+  width: 100%;
 }
 
 .item-title {
