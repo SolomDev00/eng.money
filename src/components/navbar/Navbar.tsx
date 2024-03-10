@@ -3,9 +3,13 @@ import { Dispatch, SetStateAction, useState } from "react";
 import LogoImg from "../../assets/logo.webp";
 import LogoDarkImg from "../../assets/logo02.webp";
 import Investment from "../../assets/investment.webp";
+import InvestmentDark from "../../assets/investment02.webp";
 import Recommend from "../../assets/recommend.webp";
+import RecommendDark from "../../assets/recommend02.webp";
 import Wallet from "../../assets/wallets.webp";
+import WalletDark from "../../assets/wallets03.webp";
 import Megaphone from "../../assets/megaphone.png";
+import megaphone_dark from "../../assets/megaphone_dark.png";
 import {
   Bars3BottomRightIcon,
   MegaphoneIcon,
@@ -107,8 +111,15 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                         href="/#invest"
                       >
                         <li>
-                          <div className="icon-wrapper">
-                            <img src={Investment} alt="Investment" />
+                          <div
+                            className={`${
+                              darkMode ? "icon-wrapper" : "icon-border"
+                            }`}
+                          >
+                            <img
+                              src={darkMode ? Investment : InvestmentDark}
+                              alt="Investment"
+                            />
                           </div>
                           <div className="item-title">
                             <h3>{t("navbar.investment")}</h3>
@@ -121,8 +132,15 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                         href="/#signal"
                       >
                         <li>
-                          <div className="icon-wrapper">
-                            <img src={Recommend} alt="Recommend" />
+                          <div
+                            className={`${
+                              darkMode ? "icon-wrapper" : "icon-border"
+                            }`}
+                          >
+                            <img
+                              src={darkMode ? Recommend : RecommendDark}
+                              alt="Recommend"
+                            />
                           </div>
                           <div className="item-title">
                             <h3>{t("navbar.signal")}</h3>
@@ -135,12 +153,16 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                         href="/#wallet"
                       >
                         <li>
-                          <div className="icon-wrapper">
+                          <div
+                            className={`${
+                              darkMode ? "icon-wrapper" : "icon-border"
+                            }`}
+                          >
                             <img
                               style={{
                                 width: "87%",
                               }}
-                              src={Wallet}
+                              src={darkMode ? Wallet : WalletDark}
                               alt="Wallet"
                             />
                           </div>
@@ -155,11 +177,18 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                         to="/marketing"
                       >
                         <li>
-                          <div className="icon-wrapper">
+                          <div
+                            className={`${
+                              darkMode ? "icon-wrapper" : "icon-border"
+                            }`}
+                          >
                             {i18n.language === "en" ? (
                               <MegaphoneIcon />
                             ) : (
-                              <img src={Megaphone} alt="marketing" />
+                              <img
+                                src={darkMode ? Megaphone : megaphone_dark}
+                                alt="marketing"
+                              />
                             )}
                           </div>
                           <div className="item-title">

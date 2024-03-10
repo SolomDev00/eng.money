@@ -195,6 +195,22 @@ body {
   background-color: var(--gray-menu-button-hover);
 }
 
+.list-items-with-description li .icon-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  pointer-events: all;
+  background-color: transparent;
+  border: 1px solid #232323;
+}
+
+.list-items-with-description li .icon-border img,
 .list-items-with-description li .icon-wrapper img {
   width: 100%;
 }
