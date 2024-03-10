@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --primary-100: #ff3f00;
+  --primary-200: #ff763a;
+  --primary-300: #ffe099;
+  --accent-100: #ffc801;
+  --accent-200: #916a00;
+  --text-100: #8fb635;
+  --text-200: #719912;
+  --bg-100: #f9f9f9;
+  --bg-200: #faf3f3;
+  --bg-300: #ffeaea;
+  --bg-400: #fdf2f2;
+}
+
+/* --- Global Styles --- */
+
+body {
+  background-color: var(--bg-400);
+  overflow-x: hidden;
+}
+
+body::-moz-focus-inner {
+  color: #110726;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background-color: #110726;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4b2399;
+  box-shadow: 0px 0px 30px 30px #4b2399;
+}
+
+.root-layout {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Marks --- */
+.mark {
+  position: relative;
+  padding: 0 0 10px;
+}
+
+.mark::after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 12px;
+  bottom: 0;
+  left: 50%;
+  z-index: 7;
+  -webkit-transform: translate(-45px);
+  -ms-transform: translate(-45px);
+  transform: translate(-45px);
+  background-color: #ffc221;
+  -webkit-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-image: url(assets/headline-curve.svg);
+  mask-image: url(assets/headline-curve.svg);
+}
+
+.mark-zigzag {
+  position: relative;
+  padding: 0 0 10px;
+}
+
+.mark-zigzag::after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 12px;
+  bottom: -5px;
+  left: 50%;
+  z-index: 7;
+  -webkit-transform: translate(-45px);
+  -ms-transform: translate(-45px);
+  transform: translate(-45px);
+  background-color: #ffc221;
+  -webkit-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-image: url(assets/headline-underline-zigzag.svg);
+  mask-image: url(assets/headline-underline-zigzag.svg);
+}
+
+/* --- HeroSection --- */
+.video-background {
+  position: fixed;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.overlayDark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000b3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 254, 254, 15%);
+  z-index: 10;
+}
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

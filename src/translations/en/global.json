@@ -1,0 +1,31 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "login": "Sign in",
+    "register": "Sign up with us!"
+  },
+  "home": {
+    "title": "Your Money Is the Max Enjoy & Relax.",
+    "description": "Eng-Money provides investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own.",
+    "seeMore": "Learn more About Us!"
+  },
+  "invest": {
+    "title": "Investment Plans",
+    "description": "A variety of investment plans that gives you the opportunity to choose the investment method that suits you",
+    "seeMore": "Learn more about Investment Plans!"
+  },
+  "signal": {
+    "title": "Signal Trades",
+    "description": "We provide Signals for all types of global financial markets at the highest level of accuracy, excellence and professionalism.",
+    "seeMore": "Learn more about Signal Trades!"
+  },
+  "wallet": {
+    "title": "Wallet Management",
+    "description": "We manage your account on your behalf .. Rest assured, you are in safe hands.",
+    "seeMore": "Learn more about Wallet Management!"
+  }
+}
