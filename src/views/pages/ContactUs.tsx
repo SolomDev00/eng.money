@@ -24,27 +24,27 @@ const ContactUsPage = () => {
           {t("contact.title")}
         </h2>
       </div>
-      <div className="flex flex-row justify-center gap-5">
+      <div className="flex flex-row justify-center gap-7">
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={facebook} alt="" />
+          <img className="w-9" src={facebook} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={instagram} alt="" />
+          <img className="w-9" src={instagram} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={whatsapp} alt="" />
+          <img className="w-9" src={whatsapp} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={twitter} alt="" />
+          <img className="w-9" src={twitter} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={telegram} alt="" />
+          <img className="w-9" src={telegram} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={youtube} alt="" />
+          <img className="w-9" src={youtube} alt="" />
         </Link>
         <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-10" src={tiktok} alt="" />
+          <img className="w-9" src={tiktok} alt="" />
         </Link>
       </div>
       <h3 className="text-white text-2xl">

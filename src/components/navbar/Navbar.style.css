@@ -1,5 +1,5 @@
 :root {
-  --primary: #ffc801;
+  --primary: #d4af37;
   --primary-dark: #d4af37;
   --primary-darker: #ffd700;
   --text: #f9f9f9;
@@ -20,7 +20,6 @@ body {
 
 .header {
   width: 100vw;
-  /* border-bottom: 1px solid var(--gray-border); */
   height: var(--navbar-height);
   display: flex;
   align-items: center;
@@ -52,7 +51,8 @@ body {
 }
 
 .logo img {
-  height: 3.7rem;
+  margin-top: 16px;
+  height: 3.6rem;
 }
 
 .navigation {
@@ -88,14 +88,13 @@ body {
   border: none;
   cursor: pointer;
   z-index: 1;
-  margin-right: -0.25rem;
   align-items: center;
   min-height: 2.25rem;
   font-size: 15px;
   gap: 0.25rem;
   font-weight: 400;
   flex-wrap: nowrap;
-  padding: 0.25rem 0.7rem;
+  padding: 0.25rem 0;
   white-space: nowrap;
   background: none;
   display: flex;

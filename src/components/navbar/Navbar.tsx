@@ -52,13 +52,13 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
         <div className="menu__bar">
           <Link to="/" title="Home" aria-label="home" className="logo">
             <img
-              className={`${i18n.language === "en" ? "ml-0" : "ml-4"}`}
+              className={`${i18n.language === "en" ? "ml-0" : "ml-6"}`}
               src={!darkMode ? LogoDarkImg : LogoImg}
               alt="logo"
             />
           </Link>
           <nav>
-            <ul className="navigation hide">
+            <ul className="navigation mt-4 hide">
               <li>
                 <Link
                   className="text-black dark:text-[#f9f9f9] duration-150"
@@ -182,7 +182,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
             </ul>
           </nav>
         </div>
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-row items-center gap-3 mt-4">
           <div
             className={`flex flex-row items-center gap-1 ${
               i18n.language === "en" ? "flex-row" : "flex-row-reverse"
