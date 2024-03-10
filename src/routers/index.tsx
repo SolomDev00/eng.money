@@ -12,10 +12,13 @@ import PageNotFound from "../views/PageNotFound";
 import RegisterPage from "../views/auth/Register";
 import ResetPasswordPage from "../views/auth/ResetPassword";
 import Cookies from "universal-cookie";
+import AboutUsPage from "../views/pages/AboutUs";
+import FaqPage from "../views/pages/Faq";
+import ContactUsPage from "../views/pages/ContactUs";
+import InvestmentPage from "../views/pages/services/Investment";
 
 const cookie = new Cookies();
 const token = cookie.get("userLogged");
-console.log(cookie.get("userLogged"));
 const isLoggedIn = token ? true : false;
 const userData = isLoggedIn ? { token } : null;
 
@@ -25,6 +28,10 @@ const routers = createBrowserRouter(
       {/* Root Layout */}
       <Route path="/" element={<RootLayout />} errorElement={<ErrorHandler />}>
         <Route index element={<HomePage />} />
+        <Route path="about-us" element={<AboutUsPage />} />
+        <Route path="investment" element={<InvestmentPage />} />
+        <Route path="faq" element={<FaqPage />} />
+        <Route path="contact-us" element={<ContactUsPage />} />
         <Route
           path="login"
           element={

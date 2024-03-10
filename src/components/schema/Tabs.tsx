@@ -98,7 +98,7 @@ export default function Tabs() {
                   "ring-white/60 ring-offset-2 focus:outline-none focus:ring-2 duration-150",
                   selected
                     ? "bg-white text-black font-medium shadow"
-                    : "text-font hover:bg-white/[0.12] hover:text-hover"
+                    : "text-font hover:bg-white/[0.12] hover:text-hover dark:text-bhover dark:bg-ghover"
                 )
               }
             >
@@ -135,7 +135,7 @@ export default function Tabs() {
                   {winners.map((winner, idx) => (
                     <tr
                       key={winner.id}
-                      className={idx % 2 === 1 ? "bg-white" : "bg-blue-100"}
+                      className={idx % 2 === 1 ? "bg-ohover" : "bg-yhover"}
                     >
                       <td className="py-3 px-2">{winner.id}</td>
                       <td className="py-3 px-2">{winner.username}</td>

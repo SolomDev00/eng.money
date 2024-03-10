@@ -1,22 +1,17 @@
 :root {
-  --primary: #3ecf8e;
-  --primary-dark: #37996b;
-  --primary-darker: #317f5a;
+  --primary: #ffc801;
+  --primary-dark: #d4af37;
+  --primary-darker: #ffd700;
   --text: #f9f9f9;
-  --background: #1c1c1c;
+  --background: #080707;
   --secondary: #2e2e2e;
   --gray-border: #3e3e3e;
   --gray-border-hover: #505050;
   --gray-menu-button: #7e7e7e;
   --gray-menu-button-hover: #232323;
-  --navbar-height: 4rem;
+  --navbar-height: 4.5rem;
   --gray-text-hover: #8f8f8f;
   --gray-icon: #a0a0a0;
-}
-
-body {
-  font-size: 16px;
-  background-color: var(--background);
 }
 
 .header {
@@ -52,7 +47,7 @@ body {
 }
 
 .logo img {
-  height: 2.1rem;
+  height: 3rem;
 }
 
 .navigation {
@@ -62,7 +57,6 @@ body {
   list-style-type: none;
   align-items: center;
   gap: 1rem;
-  background-color: var(--background);
 }
 
 .navigation > li {
@@ -74,8 +68,7 @@ body {
 }
 
 .navigation > li > a {
-  color: var(--text);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -85,7 +78,6 @@ body {
 }
 
 .navigation > li > button {
-  color: var(--text);
   transition: all 0.3s ease;
   text-decoration: none;
   border: none;
@@ -94,7 +86,7 @@ body {
   margin-right: -0.25rem;
   align-items: center;
   min-height: 2.25rem;
-  font-size: 14px;
+  font-size: 15px;
   gap: 0.25rem;
   font-weight: 400;
   flex-wrap: nowrap;
@@ -108,12 +100,10 @@ body {
 
 .navigation > li > button > svg {
   margin-top: 2px;
-  fill: var(--text);
   transition: all 0.2s ease-in-out;
 }
 
 .navigation > li:hover > button svg {
-  fill: var(--primary);
   transform: rotate(0.5turn);
 }
 
@@ -191,10 +181,10 @@ body {
   justify-content: center;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
   pointer-events: all;
   background-color: var(--gray-menu-button-hover);
 }
@@ -238,14 +228,14 @@ body {
 
 .secondary {
   background: none;
-  color: var(--text);
   outline: none;
   border: 1px solid var(--gray-border);
   border-radius: 0.5rem;
 }
 
 .secondary:hover {
-  border: 1px solid var(--gray-border-hover);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
 }
 
 .primary {
@@ -285,7 +275,7 @@ body.menu-closed {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية مع الاختلاف في شفافية */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mobile-menu {

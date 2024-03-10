@@ -6,12 +6,12 @@ import { useTranslation } from "react-i18next";
 import video from "../../assets/landing.mp4";
 
 const InvesetSection = () => {
-  const [t] = useTranslation("global");
+  const [t, i18n] = useTranslation("global");
 
   return (
     <section
       id="invest"
-      className={`flex flex-col justify-center items-center pt-64 pb-12 text-center rounded-b-[120px] bg-rounded`}
+      className={`flex flex-col justify-center items-center pt-64 pb-12 text-center`}
     >
       <div className="video-background">
         <video autoPlay muted loop id="video-background">
@@ -22,18 +22,19 @@ const InvesetSection = () => {
       <div className="space-y-36 z-30">
         <div className="flex flex-col justify-center items-center text-center space-y-12 max-sm:space-y-4">
           <motion.h3 className="text-5xl text-[#069603] font-medium max-sm:text-xl">
-            {t("invest.title")}
+            {t("home.invest.title")}
           </motion.h3>
-          <h5 className="text-xl text-[#333] dark:text-gray-400 w-[650px] text-center max-sm:text-base max-sm:w-[300px]">
-            {t("invest.description")}
+          <h5 className="text-xl text-black dark:text-gray-400 w-[650px] text-center max-sm:text-base max-sm:w-[300px]">
+            {t("home.invest.description")}
           </h5>
-          <Link to={"/register"}>
+          <Link to={"/investment"}>
             <Button
+              dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
-              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-[#333] dark:text-white hover:bg-[#069603] border-[#069603] border-2 max-sm:px-3 max-sm:text-base"
+              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-[#069603] border-[#069603] border-2 max-sm:px-3 max-sm:text-base"
             >
-              {t("invest.seeMore")}
-              <InformationCircleIcon className="h-7 w-7 text-[#333] dark:text-white" />
+              {t("home.invest.seeMore")}
+              <InformationCircleIcon className="h-7 w-7 text-black dark:text-white" />
             </Button>
           </Link>
         </div>

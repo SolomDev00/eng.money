@@ -6,26 +6,73 @@
     "faq": "FAQ",
     "contact": "Contact Us",
     "login": "Sign in",
-    "register": "Sign up with us!"
+    "register": "Sign up with us!",
+    "investment": "Investment Plans",
+    "investmentD": "Our Premium Investment Plans.",
+    "signal": "Signal Trades",
+    "signalD": "Best Signal Trades.",
+    "wallet": "Wallet Management",
+    "walletD": "Optimal wallet management",
+    "marketing": "Marketing",
+    "marketingD": "Effectively market your product"
   },
   "home": {
-    "title": "Your Money Is the Max Enjoy & Relax.",
-    "description": "Eng-Money provides investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own.",
-    "seeMore": "Learn more About Us!"
+    "hero": {
+      "title": "Your Money Is the Max Enjoy & Relax.",
+      "description": "ENG MONEY provides investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own.",
+      "seeMore": "Learn more About Us!"
+    },
+    "invest": {
+      "title": "Investment Plans",
+      "description": "A variety of investment plans that gives you the opportunity to choose the investment method that suits you",
+      "seeMore": "Learn more about Investment Plans!"
+    },
+    "signal": {
+      "title": "Signal Trades",
+      "description": "We provide Signals for all types of global financial markets at the highest level of accuracy, excellence and professionalism.",
+      "seeMore": "Learn more about Signal Trades!"
+    },
+    "wallet": {
+      "title": "Wallet Management",
+      "description": "We manage your account on your behalf .. Rest assured, you are in safe hands.",
+      "seeMore": "Learn more about Wallet Management!"
+    }
   },
-  "invest": {
-    "title": "Investment Plans",
-    "description": "A variety of investment plans that gives you the opportunity to choose the investment method that suits you",
-    "seeMore": "Learn more about Investment Plans!"
+  "about": {
+    "owner": "Project Founder",
+    "para1": "Engineer AbdulRahman Al-Semry holding a Bachelor’s degree in software engineering and computer science from Britain, data analysis, PMP, DA, and ML.",
+    "para2": "I entered the field of trading and investment and established ENG-MONEY company after spending 5 years of experience in the field of trading and investment in Global Financial Markets and achieving many profits throughout this period.",
+    "ourmisson": "Vision and company goals",
+    "para3": "Building a strong entity in the field of trading and investing in global financial markets, spreading the culture of trading, analyzing indicators and data, and providing a safe environment for our investor clients to achieve profits away from the risks of random trading, as the company and its clients achieved a profit rate of 180% in just 10 months, including the months of economic recession. By following the company's monetary policies in trading.",
+    "ourmsg": "Our Message",
+    "para4": "Helping our clients find their way in the field of trading and investment and achieving profits in an organized and safe manner with the least possible risks and a methodology based on scientific foundations, because of the years of experience that we have in the field of trading and investment in global financial markets."
   },
-  "signal": {
-    "title": "Signal Trades",
-    "description": "We provide Signals for all types of global financial markets at the highest level of accuracy, excellence and professionalism.",
-    "seeMore": "Learn more about Signal Trades!"
+  "faq": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "invest": {
+      "title": "Investment Plans",
+      "Q1": "If we assume that a loss occurred in one month, will work be done to compensate for it next month, or is it also possible that another loss will occur?",
+      "A1": "The loss(God forbid), falls on both parties, who invested in the capital and the project owner in terms of time and effort expended."
+    },
+    "signal": {
+      "title": "Signal Trades",
+      "Q1": "How many daily signals?",
+      "A1": "There is no specific number. Whenever we find a suitable opportunity in the market, a signal will be sent to you."
+    },
+    "wallet": {
+      "title": "Wallet Management",
+      "Q1": "Is it possible to lose my entire capital?",
+      "A1": "No, unless a technical error occurs in linking your account to the project account, in which case you must consult the wallet’s technical support."
+    },
+    "general": {
+      "title": "General Questions",
+      "Q1": "What distinguishes investment in global financial markets and ordinary investment such as the commercial field and so on?",
+      "A1": "Investing in global financial markets is one of the most important current and future fields for every investor who aspires to increase his income through passive income. What distinguishes this field most is the possibility of starting to invest with little capital. But if you try from the beginning in any other commercial field, it will not be appropriate to geta complete control about when to take profits or stop the loss, so those advantages are not found in any other investment field."
+    }
   },
-  "wallet": {
-    "title": "Wallet Management",
-    "description": "We manage your account on your behalf .. Rest assured, you are in safe hands.",
-    "seeMore": "Learn more about Wallet Management!"
+  "contact": {
+    "title": "Contact Us",
+    "login": "Login",
+    "register": "Register"
   }
 }

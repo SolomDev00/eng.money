@@ -1,13 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import { useState } from "react";
-// import Footer from "../components/Footer";
 
 const RootLayout = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+    document.body.style.backgroundColor = darkMode ? "#fff" : "#080707";
+    document.body.style.color = darkMode ? "#fff" : "#000";
   };
 
   return (
@@ -17,10 +18,9 @@ const RootLayout = () => {
         setDarkMode={setDarkMode}
         onClick={toggleDarkMode}
       />
-      <div>
+      <div className="container">
         <Outlet />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

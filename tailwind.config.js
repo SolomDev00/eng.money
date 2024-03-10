@@ -14,11 +14,11 @@ export default {
     },
     extend: {
       colors: {
-        background: "#2c2e30",
-        primary: "#FF3F00",
-        hover: "#e9663a",
-        accent: "#FFC801",
-        font: "#8fb635",
+        hover: "#ffd700",
+        yhover: "#d4af37",
+        ohover: "#dc6d31",
+        bhover: "#0393b0",
+        ghover: "#069603",
       },
     },
   },
