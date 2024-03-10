@@ -24,7 +24,7 @@ const HeroSection = () => {
         <video autoPlay muted loop id="video-background">
           <source src={video} type="video/mp4" />
         </video>
-        <div className="overlay dark:bg-[#000000b3]" />
+        <div className="overlay dark:bg-[#000000b3] " />
       </div>
       <div className="space-y-36 z-30">
         <div className="flex flex-col justify-center items-center text-center space-y-8 max-sm:space-y-4">

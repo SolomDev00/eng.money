@@ -58,8 +58,22 @@ const InvestmentPage = () => {
             {t("الباقات")}
           </h2>
           <div className="flex flex-row justify-between">
-            <div className="border-2 border-bhover">
-              <h4>كريبتو</h4>
+            <div className="border-2 border-bhover p-3 rounded-md">
+              <h4 className="text-2xl text-bhover mb-8">كريبتو</h4>
+              <div className="flex flex-col justify-between items-start">
+                <p className="text-white text-lg max-w-[550px] flex flex-row justify-start items-center gap-3">
+                  <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                  اختيار الاشتراك المناسب
+                </p>
+                <p className="text-white text-lg max-w-[550px] flex flex-row justify-start items-center gap-3">
+                  <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                  اختيار الاشتراك المناسب
+                </p>
+                <p className="text-white text-lg max-w-[550px] flex flex-row justify-start items-center gap-3">
+                  <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                  اختيار الاشتراك المناسب
+                </p>
+              </div>
             </div>
           </div>
         </div>
