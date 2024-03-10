@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import facebook from "../../assets/media/facebook.png";
-import twitter from "../../assets/media/twitter.png";
+import twitter from "../../assets/media/twitter_light.png";
 import instagram from "../../assets/media/instagram.png";
 import telegram from "../../assets/media/telegram.png";
-import tiktok from "../../assets/media/tiktok.png";
+import tiktok from "../../assets/media/tiktok_light.png";
 import whatsapp from "../../assets/media/whatsapp.png";
 import youtube from "../../assets/media/youtube.png";
 import Button from "../../components/schema/Button";
@@ -51,18 +51,22 @@ const ContactUsPage = () => {
         <span className="text-yhover">Email</span>: support@eng-money.com
       </h3>
       <div className="flex flex-row gap-5">
-        <Button
-          variant={"outline"}
-          className="px-6 text-white border-yhover yhover:bg-yhover duration-300"
-        >
-          {t("contact.register")}
-        </Button>
-        <Button
-          variant={"outline"}
-          className="px-4 text-white border-yhover yhover:bg-yhover duration-300"
-        >
-          {t("contact.login")}
-        </Button>
+        <a href="www.eng-money.com/system/regitser" target="_blank">
+          <Button
+            variant={"outline"}
+            className="px-6 text-white border-yhover yhover:bg-yhover duration-300"
+          >
+            {t("contact.register")}
+          </Button>
+        </a>
+        <a href="www.eng-money.com/system/login">
+          <Button
+            variant={"outline"}
+            className="px-4 text-white border-yhover yhover:bg-yhover duration-300"
+          >
+            {t("contact.login")}
+          </Button>
+        </a>
       </div>
     </section>
   );

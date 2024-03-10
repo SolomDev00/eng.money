@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 /* --- HeroSection --- */
 .video-background {
   position: fixed;
-  top: 62px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -225,6 +225,32 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+/* --- Investment --- */
+.bg-invest::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  z-index: -1;
+  background-image: url(./assets/bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlayInvest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
