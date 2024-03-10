@@ -46,9 +46,9 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
 
   return (
     <header
-      className={`header z-50 ${showMenu ? "menu-open" : ""} ${
-        i18n.language === "en" ? "en" : "ar"
-      }`}
+      className={`header bg-transparent dark:bg-transparent z-50 ${
+        showMenu ? "menu-open" : ""
+      } ${i18n.language === "en" ? "en" : "ar"}`}
       // className={`header bg-white dark:bg-[#080707] ${
       //   showMenu ? "menu-open" : ""
       // } ${i18n.language === "en" ? "en" : "ar"}`}
