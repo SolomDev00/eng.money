@@ -3,7 +3,7 @@ import WalletImg from "../../../assets/wallets.webp";
 import WalletImg2 from "../../../assets/wallets01.webp";
 
 const InvestmentPage = () => {
-  const [t, i18n] = useTranslation("global");
+  const [i18n] = useTranslation("global");
 
   return (
     <section
