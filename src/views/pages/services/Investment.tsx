@@ -3,7 +3,7 @@ import WalletImg from "../../../assets/wallets.webp";
 import WalletImg2 from "../../../assets/wallets01.webp";
 
 const InvestmentPage = () => {
-  const [i18n] = useTranslation("global");
+  const [t, i18n] = useTranslation("global");
 
   return (
     <section
@@ -17,7 +17,7 @@ const InvestmentPage = () => {
       </div>
       <div className="w-full flex flex-row justify-between items-center gap-10">
         <div className="text-right">
-          <h2 className="text-bhover text-4xl mb-10">شرح الخدمة</h2>
+          <h2 className="text-bhover text-4xl mb-10">{t("home.title")}</h2>
           <p className="text-white text-lg max-w-[550px]">
             نقوم بربط حساب المستثمر بحساب الشركه وعند فتح أي صفقة في حساب
             الشركه، تفتح الصفقة تلقائيا في حساب المستثمر بنفس قيمة الصفقة

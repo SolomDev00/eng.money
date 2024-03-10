@@ -15,7 +15,7 @@ import Cookies from "universal-cookie";
 import AboutUsPage from "../views/pages/AboutUs";
 import FaqPage from "../views/pages/Faq";
 import ContactUsPage from "../views/pages/ContactUs";
-import InvestmentPage from "../views/pages/services/Investment";
+// import InvestmentPage from "../views/pages/services/Investment";
 
 const cookie = new Cookies();
 const token = cookie.get("userLogged");
@@ -29,7 +29,7 @@ const routers = createBrowserRouter(
       <Route path="/" element={<RootLayout />} errorElement={<ErrorHandler />}>
         <Route index element={<HomePage />} />
         <Route path="about-us" element={<AboutUsPage />} />
-        <Route path="investment" element={<InvestmentPage />} />
+        {/* <Route path="investment" element={<InvestmentPage />} /> */}
         <Route path="faq" element={<FaqPage />} />
         <Route path="contact-us" element={<ContactUsPage />} />
         <Route
