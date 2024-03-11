@@ -17,7 +17,7 @@ const RootLayout = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
   }, []);
 
   return (
@@ -33,7 +33,7 @@ const RootLayout = () => {
             setDarkMode={setDarkMode}
             onClick={toggleDarkMode}
           />
-          <div className="container">
+          <div className="container z-30">
             <Outlet />
           </div>
         </>

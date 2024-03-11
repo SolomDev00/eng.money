@@ -15,7 +15,7 @@ const ContactUsPage = () => {
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-12 justify-between items-center pt-44 pb-12 text-center bg-image`}
+      className={`flex flex-col gap-12 justify-between items-center pt-44 pb-12 text-center bg-contact`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlayContact bg-[#e7e7e74d] dark:bg-[#000000cc]" />

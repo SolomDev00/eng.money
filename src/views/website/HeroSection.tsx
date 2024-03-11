@@ -4,23 +4,42 @@ import Button from "../../components/schema/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import facebook from "../../assets/media/facebook.png";
-import twitter from "../../assets/media/twitter.png";
+import twitter from "../../assets/media/twitter_light.png";
 import instagram from "../../assets/media/instagram.png";
 import telegram from "../../assets/media/telegram.png";
-import tiktok from "../../assets/media/tiktok.png";
+import tiktok from "../../assets/media/tiktok_light.png";
 import whatsapp from "../../assets/media/whatsapp.png";
 import youtube from "../../assets/media/youtube.png";
 import video from "../../assets/landing.mp4";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
   const [t, i18n] = useTranslation("global");
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section
       id="hero"
       className={`flex flex-col justify-center items-center pt-60 pb-12 text-center`}
     >
-      <div className="video-background">
+      <div
+        className={`video-background`}
+        style={{ top: scrolling ? "75px" : "0px" }}
+      >
         <video autoPlay muted loop id="video-background">
           <source src={video} type="video/mp4" />
         </video>
@@ -31,7 +50,7 @@ const HeroSection = () => {
           <motion.h3 className="text-5xl text-yhover font-medium max-sm:text-xl">
             {t("home.hero.title")}
           </motion.h3>
-          <h5 className="text-xl text-black dark:text-gray-400 w-[550px] text-center max-sm:text-base max-sm:w-[300px]">
+          <h5 className="text-xl text-black dark:text-gray-400 w-[580px] text-center max-sm:text-base max-sm:w-[300px]">
             {t("home.hero.description")}
           </h5>
           <Link to={"/about-us"}>

@@ -1,5 +1,5 @@
 import "./Navbar.style.css";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import LogoImg from "../../assets/logo.webp";
 import LogoDarkImg from "../../assets/logo02.webp";
 import Investment from "../../assets/investment.webp";
@@ -31,11 +31,30 @@ interface IProps {
 
 const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
     document.body.classList.toggle("menu-open", showMenu);
     document.body.classList.toggle("menu-closed", !showMenu);
+  };
+
+  const handleNavLinkClick = () => {
+    setShowMenu(false);
   };
 
   const [t, i18n] = useTranslation("global");
@@ -46,14 +65,24 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
 
   return (
     <header
-      className={`header bg-transparent dark:bg-transparent z-50 ${
+      className={`header ${
+        scrolling ? "bg-white dark:bg-black" : "text-transparent"
+      } duration-200 ${scrolling ? "bg-transparent" : "text-black"} ${
         showMenu ? "menu-open" : ""
       } ${i18n.language === "en" ? "en" : "ar"}`}
-      // className={`header bg-white dark:bg-[#080707] ${
-      //   showMenu ? "menu-open" : ""
-      // } ${i18n.language === "en" ? "en" : "ar"}`}
+      style={{
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        height: "78px",
+        zIndex: "3000",
+      }}
     >
-      <div className="menu__wrapper">
+      <div
+        className={`menu__wrapper duration-200 ${
+          scrolling ? "bg-white dark:bg-black" : "text-transparent"
+        }`}
+      >
         <div className="menu__bar">
           <Link to="/" title="Home" aria-label="home" className="logo">
             <img
@@ -258,7 +287,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
             pointer-events-none flex justify-center items-center h-[25px] w-[25px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
               >
                 {darkMode ? (
-                  <MoonIcon className="w-5 h-5" />
+                  <MoonIcon className="w-5 h-5 text-black" />
                 ) : (
                   <SunIcon className="w-5 h-5 text-black" />
                 )}
@@ -291,22 +320,80 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
           type="button"
           onClick={toggleMenu}
         >
-          {showMenu ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+          {showMenu ? (
+            <XMarkIcon className={"fill-black dark:fill-white"} />
+          ) : (
+            <Bars3BottomRightIcon className={"fill-black dark:fill-white"} />
+          )}
         </button>
         {showMenu && (
           <div className="mobile-menu-overlay">
             <div className="mobile-menu">
               <nav>
-                <ul>
-                  <li>
-                    <a href="#devs" title="Home">
-                      Home
-                    </a>
+                <ul className="text-center space-y-5">
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link to="/" title="Home" onClick={handleNavLinkClick}>
+                      {t("navbar.home")}
+                    </Link>
                   </li>
-                  <li>
-                    <a href="#pricing" title="About Us">
-                      About Us
-                    </a>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/about-us"
+                      title="about"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.about")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link to="/faq" title="faq" onClick={handleNavLinkClick}>
+                      {t("navbar.faq")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/investment"
+                      title="investment"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.investment")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/signal"
+                      title="signal"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.signal")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/wallet"
+                      title="wallet"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.wallet")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/marketing"
+                      title="marketing"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.marketing")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/contact-us"
+                      title="contact"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.contact")}
+                    </Link>
                   </li>
                 </ul>
               </nav>

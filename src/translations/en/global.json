@@ -20,22 +20,22 @@
     "hero": {
       "title": "Your Money Is the Max Enjoy & Relax.",
       "description": "ENG MONEY provides investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own.",
-      "seeMore": "Learn more About Us!"
+      "seeMore": "Learn more About Us"
     },
     "invest": {
       "title": "Investment Plans",
       "description": "A variety of investment plans that gives you the opportunity to choose the investment method that suits you",
-      "seeMore": "Learn more about Investment Plans!"
+      "seeMore": "Learn more about Investment Plans"
     },
     "signal": {
       "title": "Signal Trades",
       "description": "We provide Signals for all types of global financial markets at the highest level of accuracy, excellence and professionalism.",
-      "seeMore": "Learn more about Signal Trades!"
+      "seeMore": "Learn more about Signal Trades"
     },
     "wallet": {
       "title": "Wallet Management",
       "description": "We manage your account on your behalf .. Rest assured, you are in safe hands.",
-      "seeMore": "Learn more about Wallet Management!"
+      "seeMore": "Learn more about Wallet Management"
     }
   },
   "about": {
@@ -45,7 +45,16 @@
     "ourmisson": "Vision and company goals",
     "para3": "Building a strong entity in the field of trading and investing in global financial markets, spreading the culture of trading, analyzing indicators and data, and providing a safe environment for our investor clients to achieve profits away from the risks of random trading, as the company and its clients achieved a profit rate of 180% in just 10 months, including the months of economic recession. By following the company's monetary policies in trading.",
     "ourmsg": "Our Message",
-    "para4": "Helping our clients find their way in the field of trading and investment and achieving profits in an organized and safe manner with the least possible risks and a methodology based on scientific foundations, because of the years of experience that we have in the field of trading and investment in global financial markets."
+    "para4": "Helping our clients find their way in the field of trading and investment and achieving profits in an organized and safe manner with the least possible risks and a methodology based on scientific foundations, because of the years of experience that we have in the field of trading and investment in global financial markets.",
+    "ourhosts": "Our Branches",
+    "dubai": "UAE Branch",
+    "london": "UK Branch",
+    "name": "Name:",
+    "registerNum": "Registered Number:",
+    "licenseNum": "License Number:",
+    "pobox": "PO Box:",
+    "address": "Address:",
+    "companyNum": "Company Nubmer:"
   },
   "faq": {
     "title": "Frequently Asked Questions (FAQ)",
@@ -74,5 +83,107 @@
     "title": "Contact Us",
     "login": "Login",
     "register": "Register"
+  },
+  "wallet": {
+    "explanation": {
+      "title": "Service Explanation",
+      "description": "We link the investor’s account to the company’s account, and when any deal is opened in the company’s account, the deal is automatically opened in the investor’s account with the same value as the main deal out of the total capital. For example, if we open in the company’s account a deal on a currency with a total of 20% of the capital, a deal is automatically opened for all investors in the same currency, at a value of 20% of the investor’s capital, and when any change occurs to the deal, it is also automatically applied to the investors’ open deals."
+    },
+    "method": {
+      "title": "Working Method",
+      "para1": "Create an account on the company’s ENG MONEY website and verify it",
+      "para2": "Choose the appropriate subscription for you",
+      "para3": "Communicate with the project owner on Telegram account",
+      "user": "@Eng_Money"
+    },
+    "plans": {
+      "title": "Plans",
+      "d1": "Crypto",
+      "d2": "Forex",
+      "para1": "Minimum capital is",
+      "para2": "Subscription fee",
+      "para3": "Project percentage",
+      "sub": "Subscribe Now"
+    }
+  },
+  "signal": {
+    "explanation": {
+      "title": "Trading Signals",
+      "description": "We provide you with daily signals in the field of Forex, Crypto, metals, and other opportunities suitable for trading in global financial markets",
+      "description2": "All you have to do is subscribe to one of the signal plans that are appropriate for you and follow the signals through your control panel on the site or the Telegram channel for signals and implement them Accurately and Carefully"
+    },
+    "plans": {
+      "title": "Monthly Plans",
+      "d1": "Crypto",
+      "d2": "2in1 ",
+      "d3": "Forex",
+      "para1": "Subscription fee",
+      "para2": "Minimum capital is",
+      "sub": "Subscribe Now"
+    },
+    "numbers": "Number of subscribers"
+  },
+  "marketing": {
+    "explanation": {
+      "title": "Earn more with Marketing",
+      "description": "An additional opportunity for those with marketing skills. You can work with us through the marketing system by creating an account and marketing to others using your referral link"
+    },
+    "plans": {
+      "d1": "Direct Commission",
+      "para1": "Invite your friend and achieve a success sale then you will get 1.5% of the first deposit or service activation fee and that for one time only",
+      "para2": "Note: commission will be added to your account balance after activating the plan or service",
+      "d2": "Shared Profit",
+      "para3": "ENG MONEY shares 15% of its profits with you on an ongoing basis, means every time ENG MONEY receives profits from one of the investors who were invited through you, ENG MONEY deducts 15% of the value of its profits and adds it to your account and it is subject to withdrawal or investment"
+    },
+    "btn": "Join now"
+  },
+  "ivestment": {
+    "explanation": {
+      "title": "Project Idea",
+      "description": "Providing investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own"
+    },
+    "date": {
+      "title": "Starting Date",
+      "description": "We started the project on 11/9/2022 by creating a group on Telegram to test performance and discover practical errors. Praise be to God, the best form for the project was achieved and developed to be a website for each subscriber with his own Control Panel to follow his account and profits in a detailed and organized manner",
+      "title2": "Investment Return",
+      "description2": "130% Net Profits with full commitment to organized and strict financial management and the lowest risk"
+    },
+    "method": {
+      "title": "Working Method",
+      "para1": "Register on the site and create your own account",
+      "para2": "Verify the account in simple and easy steps",
+      "para3": "Determine the appropriate investment plan",
+      "para4": "Deposit the capital to be invested in your account on the site",
+      "para5": "Enjoy peace and prosperity while we work on your behalf"
+    },
+    "plans": {
+      "monthly": "Monthly Plans",
+      "weekly": "Weekly Plans",
+      "semi&long": {
+        "title": "Semi & Long Term Plans",
+        "d1": "3",
+        "d2": "6",
+        "d3": "9",
+        "d4": "12"
+      },
+      "d1": "Strict",
+      "d2": "Low risk",
+      "d3": "Medium risk",
+      "d4": "High risk",
+      "para1": "Risk ratio",
+      "para2": "Profits ratio from",
+      "para3": "to",
+      "para4": "Minimum capital is",
+      "btn": "Join now"
+    },
+    "info": {
+      "title": "Important Information",
+      "para1": "Activating any investment plan constitutes your acknowledgment and approval to invest this amount as previously explained in the plan specifications",
+      "para2": "Once the plan is activated, this is my acknowledgment that I have received the amount",
+      "para3": "The plan cannot be stopped after its activation until it’s expiry date",
+      "para4": "The same plan will be reactivated automatically after its expiration, unless it is stopped within a maximum period of one day from the time it ends",
+      "para5": "The commission percentage is calculated from the value of the investor's capital without affecting the basic capital",
+      "para6": "The commission is calculated as soon as the investor activates the package and can be directly withdrawal"
+    }
   }
 }

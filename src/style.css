@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: translate(-45px);
   -ms-transform: translate(-45px);
   transform: translate(-45px);
-  background-color: #ffc221;
+  background-color: #069603;
   -webkit-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
@@ -108,9 +108,10 @@ body::-webkit-scrollbar-thumb {
 .video-background {
   position: fixed;
   top: 0;
+  /* top: 75px; */
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 20px);
   z-index: -1;
 }
 
@@ -130,7 +131,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 65%);
+  background: rgba(255, 255, 255, 60%);
   filter: grayscale(70%) contrast(0%) opacity(0.6) blur(1.1);
 }
 
@@ -148,7 +149,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 155%;
   z-index: -1;
   background-image: url(./assets/bg2.webp);
   background-size: cover;
@@ -161,9 +162,35 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 155%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .bg-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275%;
+    z-index: -1;
+    background-image: url(./assets/bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .overlayAbout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
 }
 
 /* --- FAQ --- */
@@ -219,6 +246,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* --- Contact --- */
+.bg-contact::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(./assets/bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .overlayContact {
   position: absolute;
   top: 0;
@@ -229,15 +271,26 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
 }
 
-/* --- Investment --- */
-.bg-invest::before {
+@media (max-width: 767px) {
+  .overlayContact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+}
+/* --- Wallet --- */
+.bg-wallet::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 170%;
   z-index: -1;
   background-image: url(./assets/bg2.webp);
   background-size: cover;
@@ -245,14 +298,195 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.overlayInvest {
+.overlayWallet {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 170%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .bg-wallet::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275%;
+    z-index: -1;
+    background-image: url(./assets/bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .overlayWallet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+}
+
+/* --- Signals --- */
+.bg-signals::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170%;
+  z-index: -1;
+  background-image: url(./assets/bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlaySignals {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .bg-signals::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 245%;
+    z-index: -1;
+    background-image: url(./assets/bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .overlaySignals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 245%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+}
+
+/* --- Marketing --- */
+.bg-marketing::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(./assets/bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlayMarketing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .bg-marketing::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-image: url(./assets/bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .overlayMarketing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+}
+/* --- Ivestment --- */
+.bg-ivestment::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 365%;
+  z-index: -1;
+  background-image: url(./assets/bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlayIvestment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 365%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .bg-ivestment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 810%;
+    z-index: -1;
+    background-image: url(./assets/bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .overlayIvestment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 810%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
 }
 
 @tailwind base;

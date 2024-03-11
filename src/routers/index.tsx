@@ -15,6 +15,9 @@ import Cookies from "universal-cookie";
 import AboutUsPage from "../views/pages/AboutUs";
 import FaqPage from "../views/pages/Faq";
 import ContactUsPage from "../views/pages/ContactUs";
+import WalletPage from "../views/pages/services/Wallet";
+import SignalPage from "../views/pages/services/Signals";
+import MarketingPage from "../views/pages/services/Marketing";
 import InvestmentPage from "../views/pages/services/Investment";
 
 const cookie = new Cookies();
@@ -29,6 +32,9 @@ const routers = createBrowserRouter(
       <Route path="/" element={<RootLayout />} errorElement={<ErrorHandler />}>
         <Route index element={<HomePage />} />
         <Route path="about-us" element={<AboutUsPage />} />
+        <Route path="wallet" element={<WalletPage />} />
+        <Route path="signal" element={<SignalPage />} />
+        <Route path="marketing" element={<MarketingPage />} />
         <Route path="investment" element={<InvestmentPage />} />
         <Route path="faq" element={<FaqPage />} />
         <Route path="contact-us" element={<ContactUsPage />} />

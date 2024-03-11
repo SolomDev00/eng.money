@@ -24,7 +24,7 @@ const WalletSection = () => {
           <motion.h3 className="text-5xl text-[#0393b0] font-medium max-sm:text-xl">
             {t("home.wallet.title")}
           </motion.h3>
-          <h5 className="text-xl text-black dark:text-gray-400 w-[650px] text-center max-sm:text-base max-sm:w-[300px]">
+          <h5 className="text-xl text-black dark:text-gray-400 w-[500px] text-center max-sm:text-base max-sm:w-[300px]">
             {t("home.wallet.description")}
           </h5>
           <Link to={"/wallet"}>
