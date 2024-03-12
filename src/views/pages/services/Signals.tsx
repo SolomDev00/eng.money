@@ -14,7 +14,7 @@ const SignalPage = () => {
   return (
     <section
       id="signals"
-      className={`flex flex-col gap-12 justify-between items-center pt-20 pb-12 text-center bg-signals`}
+      className={`flex flex-col gap-12 justify-between items-center pt-44 pb-12 text-center bg-signals`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlaySignals bg-[#e7e7e74d] dark:bg-[#000000cc]" />
@@ -29,10 +29,10 @@ const SignalPage = () => {
             <h2 className="text-ohover text-4xl mb-10">
               {t("signal.explanation.title")}
             </h2>
-            <p className="text-white text-lg max-w-[550px]">
+            <p className="text-black dark:text-white text-lg max-w-[550px]">
               {t("signal.explanation.description")}
             </p>
-            <p className="text-white text-lg max-w-[550px]">
+            <p className="text-black dark:text-white text-lg max-w-[550px]">
               {t("signal.explanation.description2")}
             </p>
           </div>
@@ -57,12 +57,12 @@ const SignalPage = () => {
                 </div>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para1")}
                   <span className="text-ohover">$100</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para2")}
                   <span className="text-ohover">$1,000</span>
@@ -79,26 +79,27 @@ const SignalPage = () => {
               </div>
             </div>
             <div
-              className={`border-2 border-ohover ${
+              className={`border-2 border-ohover rounded-lg ${
                 i18n.language === "en" ? "py-4 px-6" : "py-5 px-10"
-              } rounded-lg`}
+              }`}
+              dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
             >
               <div className="flex flex-row-reverse justify-between items-center mb-8">
-                <h4 className="text-3xl text-ohover">{t("signal.plans.d2")}</h4>
+                <h4 className="text-3xl text-ohover">{t("signal.plans.d3")}</h4>
                 <div className="rounded-md cursor-pointer p-2">
-                  <img className="w-11" src={Inclusive} alt="Inclusive" />
+                  <img className="w-10" src={Forex} alt="Forex" />
                 </div>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para1")}
-                  <span className="text-ohover">$170</span>
+                  <span className="text-ohover">$100</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para2")}
-                  <span className="text-ohover">$500</span>
+                  <span className="text-ohover">$700</span>
                 </p>
               </div>
               <div className="flex justify-center items-center">
@@ -112,27 +113,26 @@ const SignalPage = () => {
               </div>
             </div>
             <div
-              className={`border-2 border-ohover rounded-md rounded-s-3xl max-sm:rounded-md ${
+              className={`border-2 border-ohover rounded-s-3xl max-sm:rounded-md ${
                 i18n.language === "en" ? "py-4 px-6" : "py-5 px-10"
-              }`}
-              dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
+              } rounded-lg`}
             >
               <div className="flex flex-row-reverse justify-between items-center mb-8">
-                <h4 className="text-3xl text-ohover">{t("signal.plans.d3")}</h4>
+                <h4 className="text-3xl text-ohover">{t("signal.plans.d2")}</h4>
                 <div className="rounded-md cursor-pointer p-2">
-                  <img className="w-10" src={Forex} alt="Forex" />
+                  <img className="w-11" src={Inclusive} alt="Inclusive" />
                 </div>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para1")}
-                  <span className="text-ohover">$100</span>
+                  <span className="text-ohover">$170</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ohover" />
                   {t("signal.plans.para2")}
-                  <span className="text-ohover">$700</span>
+                  <span className="text-ohover">$500</span>
                 </p>
               </div>
               <div className="flex justify-center items-center">
@@ -149,7 +149,7 @@ const SignalPage = () => {
         </div>
         <div className="mt-20 max-sm:mt-5">
           <h3 className="mb-5 text-ohover text-4xl">{t("signal.numbers")}</h3>
-          <span className="text-white text-5xl">
+          <span className="text-black dark:text-white text-5xl">
             <CountUp duration={15} end={1542} />
           </span>
         </div>

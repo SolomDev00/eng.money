@@ -7,7 +7,7 @@ const AboutUsPage = () => {
   return (
     <section
       id="about"
-      className={`pt-32 pb-12 text-center bg-image`}
+      className={`pt-44 pb-12 text-center bg-image`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="flex flex-row max-sm:flex-col gap-12 justify-between items-center">
@@ -28,22 +28,22 @@ const AboutUsPage = () => {
         >
           <div className="mb-6">
             <h3 className="text-hover text-2xl mb-4">{t("about.owner")}</h3>
-            <p className="text-base text-white dark:text-white">
+            <p className="text-base text-black dark:text-white">
               {t("about.para1")}
             </p>
-            <p className="text-base text-white dark:text-white">
+            <p className="text-base text-black dark:text-white">
               {t("about.para2")}
             </p>
           </div>
           <div className="mb-6">
             <h3 className="text-hover text-2xl mb-4">{t("about.ourmisson")}</h3>
-            <p className="text-base text-white dark:text-white">
+            <p className="text-base text-black dark:text-white">
               {t("about.para3")}
             </p>
           </div>
           <div className="mb-6">
             <h3 className="text-hover text-2xl mb-4">{t("about.ourmsg")}</h3>
-            <p className="text-base text-white dark:text-white">
+            <p className="text-base text-black dark:text-white">
               {t("about.para4")}
             </p>
           </div>
@@ -74,23 +74,23 @@ const AboutUsPage = () => {
           >
             <div className="mb-6 max-w-[400px]">
               <h3 className="text-hover text-2xl mb-4">{t("about.dubai")}</h3>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.name")}
                 <span className="mx-[3px]">ENG MONEY CONSULTANCY - FZCO</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.registerNum")}
                 <span className="mx-[3px]">DSO-FZCO-39940</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.licenseNum")}
                 <span className="mx-[3px]">42085</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.pobox")}
                 <span className="mx-[3px]">3420001, Dubai, United</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.address")}
                 <span className="mx-[3px]">
                   UnitedBuilding A1, Dubai Digital Park, Dubai Silicon Oasis,
@@ -121,15 +121,15 @@ const AboutUsPage = () => {
           >
             <div className="mb-6">
               <h3 className="text-hover text-2xl mb-4">{t("about.london")}</h3>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.name")}
                 <span className="mx-[3px]">ENG MONEY LTD</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.companyNum")}
                 <span className="mx-[3px]">15438832</span>
               </p>
-              <p className="text-base text-white dark:text-white">
+              <p className="text-base text-black dark:text-white">
                 {t("about.address")}
                 <span className="mx-[3px]">
                   128 City Road, London, United Kingdom EC1V 2NX

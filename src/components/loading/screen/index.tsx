@@ -4,7 +4,7 @@ const LoadingScreen = () => {
   return (
     <span
       className="loader max-sm:hidden"
-      onClick={() => scrollTo(0, 1050)}
+      onClick={() => scrollTo(0, 1150)}
     ></span>
   );
 };

@@ -1,5 +1,5 @@
-.loader {
-  margin-top: 240px !important;
+.Iloader {
+  margin-top: 230px !important;
   width: 48px;
   height: 78px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.loader::before {
+.Iloader::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -17,7 +17,7 @@
   transform: translate(-50%, 50%);
   width: 10px;
   height: 10px;
-  background: #d4af37;
+  background: #069603;
   border-radius: 50%;
   animation: fadeDown 1s ease-out infinite;
 }

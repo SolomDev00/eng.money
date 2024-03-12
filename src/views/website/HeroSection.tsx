@@ -12,6 +12,7 @@ import whatsapp from "../../assets/media/whatsapp.png";
 import youtube from "../../assets/media/youtube.png";
 import video from "../../assets/landing.mp4";
 import { useEffect, useState } from "react";
+import LoadingScreen from "../../components/loading/screen";
 
 const HeroSection = () => {
   const [t, i18n] = useTranslation("global");
@@ -34,7 +35,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className={`flex flex-col justify-center items-center pt-60 pb-12 text-center`}
+      className={`flex flex-col justify-center items-center pt-64 pb-12 text-center`}
     >
       <div
         className={`video-background`}
@@ -50,10 +51,10 @@ const HeroSection = () => {
           <motion.h3 className="text-5xl text-yhover font-medium max-sm:text-xl">
             {t("home.hero.title")}
           </motion.h3>
-          <h5 className="text-xl text-black dark:text-gray-400 w-[580px] text-center max-sm:text-base max-sm:w-[300px]">
+          <h5 className="text-xl text-black dark:text-gray-200 w-[580px] text-center max-sm:text-base max-sm:w-[300px]">
             {t("home.hero.description")}
           </h5>
-          <Link to={"/about-us"}>
+          <Link to={"/about-us"} onClick={() => window.scrollTo(0, 0)}>
             <Button
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
@@ -64,28 +65,64 @@ const HeroSection = () => {
             </Button>
           </Link>
           <div className="flex flex-row justify-center gap-7">
-            <Link to={"/"} className="hover:scale-110 duration-200">
+            <Link
+              to={"https://facebook.com/ENG.MONEY.LTD"}
+              target="_blank"
+              className="hover:scale-110 duration-200"
+              title="Facebook"
+            >
               <img className="w-9" src={facebook} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
+            <Link
+              to={"https://instagram.com/eng_money_ltd"}
+              target="_blank"
+              className="hover:scale-110 duration-200"
+              title="Instagram"
+            >
               <img className="w-9" src={instagram} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
+            <Link
+              to={"https://whatsapp.com/channel/0029VaDjoncAojZ1c85qv327"}
+              target="_blank"
+              className="hover:scale-110 duration-200"
+              title="Whatsapp"
+            >
               <img className="w-9" src={whatsapp} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
-              <img className="w-9" src={twitter} alt="" />
+            <Link
+              target="_blank"
+              to={"https://twitter.com/eng_money_ltd"}
+              className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
+              title="Twitter"
+            >
+              <img className="w-7 dark:w-7" src={twitter} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
+            <Link
+              to={"https://t.me/ENG_MONEY_LTD_CHANNEL"}
+              target="_blank"
+              className="hover:scale-110 duration-200"
+              title="Telegram"
+            >
               <img className="w-9" src={telegram} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
+            <Link
+              to={"https://www.youtube.com/@Eng_Money"}
+              target="_blank"
+              className="hover:scale-110 duration-200"
+              title="Youtube"
+            >
               <img className="w-9" src={youtube} alt="" />
             </Link>
-            <Link to={"/"} className="hover:scale-110 duration-200">
-              <img className="w-9" src={tiktok} alt="" />
+            <Link
+              to={"https://tiktok.com/@eng_money_ltd"}
+              target="_blank"
+              className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
+              title="Tiktok"
+            >
+              <img className="w-7 dark:w-7" src={tiktok} alt="" />
             </Link>
           </div>
+          <LoadingScreen />
         </div>
       </div>
     </section>

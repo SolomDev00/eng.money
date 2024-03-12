@@ -3,19 +3,20 @@ import GFaqCards from "../../components/cards/GFaqCards";
 import OFaqCards from "../../components/cards/OFaqCards";
 import BFaqCards from "../../components/cards/BFaqCards";
 import YFaqCards from "../../components/cards/YFaqCards";
+import TablesPLN from "../../assets/plans_compare.webp";
 
 const FaqPage = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
     <main
-      className="w-full max-h-[200%] mt-32 bg-faq"
+      className="w-full max-h-[200%] mt-44 bg-faq"
       dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayFaq bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className="overlayFaq bg-[#f9f9f94d] dark:bg-[#000000cc]" />
       <div className="mb-2">
         <h2 className="text-4xl text-center mb-4 text-hover">
-          {t("faq.title")}
+          <span className="mark-zigzag">{t("faq.title")}</span>
         </h2>
       </div>
       <div className="w-full pb-20">
@@ -28,11 +29,75 @@ const FaqPage = () => {
             answer={t("faq.invest.A1")}
           />
           <GFaqCards
-            question={t("faq.invest.Q1")}
-            answer={t("faq.invest.A1")}
+            question={t("faq.invest.Q2")}
+            answer={t("faq.invest.A2")}
           />
           <GFaqCards
-            question={t("faq.invest.Q1")}
+            question={t("faq.invest.Q3")}
+            answer={t("faq.invest.A3")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q4")}
+            answer={t("faq.invest.A4")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q5")}
+            answer={t("faq.invest.A5")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q6")}
+            answer={t("faq.invest.A6")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q7")}
+            answer={t("faq.invest.A7")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q8")}
+            answer={t("faq.invest.A8")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q9")}
+            answer={t("faq.invest.A9")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q10")}
+            answer={t("faq.invest.A10")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q11")}
+            answer={t("faq.invest.A11")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q12")}
+            answer={t("faq.invest.A12")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q13")}
+            answer={t("faq.invest.A13")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q14")}
+            answer={t("faq.invest.A14")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q15")}
+            answer={t("faq.invest.A15")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q16")}
+            answer={t("faq.invest.A16")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q17")}
+            answer={t("faq.invest.A17")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q18")}
+            answer={t("faq.invest.A18")}
+          />
+          <GFaqCards
+            question={t("faq.invest.Q19")}
             answer={t("faq.invest.A1")}
           />
         </div>
@@ -45,8 +110,8 @@ const FaqPage = () => {
             answer={t("faq.signal.A1")}
           />
           <OFaqCards
-            question={t("faq.signal.Q1")}
-            answer={t("faq.signal.A1")}
+            question={t("faq.signal.Q2")}
+            answer={t("faq.signal.A2")}
           />
         </div>
         <div className="w-full flex flex-col justify-between items-start mt-20">
@@ -58,8 +123,8 @@ const FaqPage = () => {
             answer={t("faq.wallet.A1")}
           />
           <BFaqCards
-            question={t("faq.wallet.Q1")}
-            answer={t("faq.wallet.A1")}
+            question={t("faq.wallet.Q2")}
+            answer={t("faq.wallet.A2")}
           />
         </div>
         <div className="w-full flex flex-col justify-between items-start mt-20">
@@ -71,8 +136,12 @@ const FaqPage = () => {
             answer={t("faq.general.A1")}
           />
           <YFaqCards
-            question={t("faq.general.Q1")}
-            answer={t("faq.general.A1")}
+            question={t("faq.general.Q2")}
+            answer={t("faq.general.A2")}
+          />
+          <YFaqCards
+            question={t("faq.general.Q3")}
+            answer={<img src={TablesPLN} alt="tables" />}
           />
         </div>
       </div>

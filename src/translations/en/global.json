@@ -18,7 +18,7 @@
   },
   "home": {
     "hero": {
-      "title": "Your Money Is the Max Enjoy & Relax.",
+      "title": "Your Money Is the Max .. Enjoy & Relax",
       "description": "ENG MONEY provides investment opportunities in all types of global financial markets for those who have small, medium and large capital, but don’t have sufficient experience to trade on their own.",
       "seeMore": "Learn more About Us"
     },
@@ -36,12 +36,17 @@
       "title": "Wallet Management",
       "description": "We manage your account on your behalf .. Rest assured, you are in safe hands.",
       "seeMore": "Learn more about Wallet Management"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "An additional opportunity for those who got marketing skills",
+      "seeMore": "Learn more about Marketing"
     }
   },
   "about": {
     "owner": "Project Founder",
     "para1": "Engineer AbdulRahman Al-Semry holding a Bachelor’s degree in software engineering and computer science from Britain, data analysis, PMP, DA, and ML.",
-    "para2": "I entered the field of trading and investment and established ENG-MONEY company after spending 5 years of experience in the field of trading and investment in Global Financial Markets and achieving many profits throughout this period.",
+    "para2": "I entered the field of trading and investment and established ENG-MONEY company after spending 6 years of experience in the field of trading and investment in Global Financial Markets and achieving many profits throughout this period.",
     "ourmisson": "Vision and company goals",
     "para3": "Building a strong entity in the field of trading and investing in global financial markets, spreading the culture of trading, analyzing indicators and data, and providing a safe environment for our investor clients to achieve profits away from the risks of random trading, as the company and its clients achieved a profit rate of 180% in just 10 months, including the months of economic recession. By following the company's monetary policies in trading.",
     "ourmsg": "Our Message",
@@ -61,22 +66,66 @@
     "invest": {
       "title": "Investment Plans",
       "Q1": "If we assume that a loss occurred in one month, will work be done to compensate for it next month, or is it also possible that another loss will occur?",
-      "A1": "The loss(God forbid), falls on both parties, who invested in the capital and the project owner in terms of time and effort expended."
+      "A1": "The loss(God forbid), falls on both parties, who invested in the capital and the project owner in terms of time and effort expended.",
+      "Q2": "What deposit methods are available in the investment plans?",
+      "A2": "USDT",
+      "Q3": "Is the deposit automatic?",
+      "A3": "Yes",
+      "Q4": "How long does it take to receive the deposit into my account on the site?",
+      "A4": "From one minute to 30 minutes, which may be slightly longer in the event of heavy pressure on depositing clients on the encrypted channel.",
+      "Q5": "When does a withdrawal request arrive in my wallet?",
+      "A5": "From a quarter to two hours.",
+      "Q6": "Can the capital be withdrawn after activating the plan?",
+      "A6": "No, but you can withdraw the capital immediately after the plan period ends.",
+      "Q7": "What is the minimum withdrawal?",
+      "A7": "$10",
+      "Q8": "What are the withdrawal fees?",
+      "A8": "5% of the amount value",
+      "Q9": "What is the minimum capital to subscribe to investment plans?",
+      "A9": "$30",
+      "Q10": "What does risk ratio mean?",
+      "A10": "That is, it is the maximum monthly loss, (God forbid).",
+      "Q11": "When do I receive the marketing commission?",
+      "A11": "Once the investor activates one of the packages, you can withdraw it if it exceeds the minimum withdrawal limit.",
+      "Q12": "Is account verification required?",
+      "A12": "This is preferred, because it preserves your rights as an investor if the project owner dies, (God forbid). However, if you don’t want to verify the account, you can contact the project owner on his account on Telegram.",
+      "Q13": "How is the marketing commission calculated?",
+      "A13": "The marketing commission is calculated from the value of the first-time depositor's capital and is calculated only once.",
+      "Q14": "When did the project start?",
+      "A14": "11/15/2022",
+      "Q15": "Where can I find the project explanation?",
+      "A15": "On all our social media channels, such as YouTube, Telegram, and others.",
+      "Q16": "Can I join the project and earn from it without subscribing to any service or depositing a capital?",
+      "A16": "Yes, you can join and make money with us without activating a plan or depositing a capital, by promoting the project and benefiting from the direct and indirect marketing system.",
+      "Q17": "If the project owner dies, (God forbid), how can I claim my capital and profits?",
+      "A17": "You can do this by communicating with the heirs through one of the project’s social media channels and sending a photo of your account on the site, in addition to a photo of the card which the account is verified with.",
+      "Q18": "Is it possible to lose my entire capital?",
+      "A18": "Not at all, because we work with an organized financial management system and we do not accept the account being exposed to a complete loss.",
+      "Q19": "Is it possible to lose in any month?",
+      "A19": "Yes, loss is possible because we are trading in the market."
     },
     "signal": {
       "title": "Signal Trades",
       "Q1": "How many daily signals?",
-      "A1": "There is no specific number. Whenever we find a suitable opportunity in the market, a signal will be sent to you."
+      "A1": "There is no specific number. Whenever we find a suitable opportunity in the market, a signal will be sent to you.",
+      "Q2": "Is it possible to lose my entire capital?",
+      "A2": "Yes, if you do not adhere to the signal exactly or neglect to follow it."
     },
     "wallet": {
       "title": "Wallet Management",
       "Q1": "Is it possible to lose my entire capital?",
-      "A1": "No, unless a technical error occurs in linking your account to the project account, in which case you must consult the wallet’s technical support."
+      "A1": "No, unless a technical error occurs in linking your account to the project account, in which case you must consult the wallet’s technical support.",
+      "Q2": "What is the expected profit percentage and over what period?",
+      "A2": "Depending on the market situation, but rest assured that we are working to reach the highest possible profits while committing to organized financial management."
     },
     "general": {
       "title": "General Questions",
       "Q1": "What distinguishes investment in global financial markets and ordinary investment such as the commercial field and so on?",
-      "A1": "Investing in global financial markets is one of the most important current and future fields for every investor who aspires to increase his income through passive income. What distinguishes this field most is the possibility of starting to invest with little capital. But if you try from the beginning in any other commercial field, it will not be appropriate to geta complete control about when to take profits or stop the loss, so those advantages are not found in any other investment field."
+      "A1": "Investing in global financial markets is one of the most important current and future fields for every investor who aspires to increase his income through passive income. What distinguishes this field most is the possibility of starting to invest with little capital. But if you try from the beginning in any other commercial field, it will not be appropriate to geta complete control about when to take profits or stop the loss, so those advantages are not found in any other investment field.",
+      "Q2": "How can I choose the best ENG-MONEY service that suits me?",
+      "A2": "This depends on several points, such as the extent of your understanding of the basics of trading, executing trades, your free time, etc., but it can be said in short that it is ultimately due to what you prefer. If you prefer to execute trades yourself while bearing their risks, then the Signal Trades service is suitable for you. If you love comfort and enjoy tracking your profits, then theInvestment Plans service or Wallet Managementserviceis suitable for you.",
+      "Q3": "Which plan is best?",
+      "A3": "Investing in global financial markets is one of the most important current and future fields for every investor who aspires to increase his income through passive income. What distinguishes this field most is the possibility of starting to invest with little capital. But if you try from the beginning in any other commercial field, it will not be appropriate to geta complete control about when to take profits or stop the loss, so those advantages are not found in any other investment field."
     }
   },
   "contact": {
@@ -109,13 +158,13 @@
   "signal": {
     "explanation": {
       "title": "Trading Signals",
-      "description": "We provide you with daily signals in the field of Forex, Crypto, metals, and other opportunities suitable for trading in global financial markets",
+      "description": "We provide you with daily signals in the field of Forex, Crypto, METALS, and other opportunities suitable for trading in global financial markets",
       "description2": "All you have to do is subscribe to one of the signal plans that are appropriate for you and follow the signals through your control panel on the site or the Telegram channel for signals and implement them Accurately and Carefully"
     },
     "plans": {
       "title": "Monthly Plans",
       "d1": "Crypto",
-      "d2": "2in1 ",
+      "d2": "2in1",
       "d3": "Forex",
       "para1": "Subscription fee",
       "para2": "Minimum capital is",
@@ -126,7 +175,7 @@
   "marketing": {
     "explanation": {
       "title": "Earn more with Marketing",
-      "description": "An additional opportunity for those with marketing skills. You can work with us through the marketing system by creating an account and marketing to others using your referral link"
+      "description": "An additional opportunity for those who got marketing skills. You can work with us through the marketing system by creating an account and marketing to others using your referral link"
     },
     "plans": {
       "d1": "Direct Commission",

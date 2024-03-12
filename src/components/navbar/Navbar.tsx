@@ -11,6 +11,7 @@ import WalletDark from "../../assets/wallets03.webp";
 import Megaphone from "../../assets/megaphone.png";
 import megaphone_dark from "../../assets/megaphone_dark.png";
 import {
+  Bars3BottomLeftIcon,
   Bars3BottomRightIcon,
   MegaphoneIcon,
   MoonIcon,
@@ -133,11 +134,11 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                     i18n.language === "en" ? "ml-0" : "ml-[-300px]"
                   }`}
                 >
-                  <div className="dropdown">
+                  <div className={`dropdown bg-white dark:bg-[#3e3e3e]`}>
                     <ul className="list-items-with-description">
-                      <a
+                      <Link
+                        to="/investment"
                         className="text-black dark:text-[#f9f9f9] duration-150"
-                        href="/#invest"
                       >
                         <li>
                           <div
@@ -155,10 +156,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                             <p>{t("navbar.investmentD")}</p>
                           </div>
                         </li>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to="/signal"
                         className="text-black dark:text-[#f9f9f9] duration-150"
-                        href="/#signal"
                       >
                         <li>
                           <div
@@ -176,10 +177,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                             <p>{t("navbar.signalD")}</p>
                           </div>
                         </li>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to="/wallet"
                         className="text-black dark:text-[#f9f9f9] duration-150"
-                        href="/#wallet"
                       >
                         <li>
                           <div
@@ -200,10 +201,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                             <p>{t("navbar.walletD")}</p>
                           </div>
                         </li>
-                      </a>
+                      </Link>
                       <Link
-                        className="text-black dark:text-[#f9f9f9] duration-150"
                         to="/marketing"
+                        className="text-black dark:text-[#f9f9f9] duration-150"
                       >
                         <li>
                           <div
@@ -322,8 +323,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
         >
           {showMenu ? (
             <XMarkIcon className={"fill-black dark:fill-white"} />
-          ) : (
+          ) : i18n.language === "en" ? (
             <Bars3BottomRightIcon className={"fill-black dark:fill-white"} />
+          ) : (
+            <Bars3BottomLeftIcon className={"fill-black dark:fill-white"} />
           )}
         </button>
         {showMenu && (

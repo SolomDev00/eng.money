@@ -6,6 +6,7 @@ import WalletImg2 from "../../../assets/wallets01.webp";
 import WalletImg3 from "../../../assets/wallets02.webp";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Button from "../../../components/schema/Button";
+import { Link } from "react-router-dom";
 
 const WalletPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -13,7 +14,7 @@ const WalletPage = () => {
   return (
     <section
       id="wallet"
-      className={`flex flex-col gap-12 justify-between items-center pt-20 pb-12 text-center bg-wallet`}
+      className={`flex flex-col gap-12 justify-between items-center pt-40 pb-12 text-center bg-wallet`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlayWallet bg-[#e7e7e74d] dark:bg-[#000000cc]" />
@@ -29,7 +30,7 @@ const WalletPage = () => {
             <h2 className="text-bhover text-4xl mb-10">
               {t("wallet.explanation.title")}
             </h2>
-            <p className="text-white text-lg max-w-[550px]">
+            <p className="text-black dark:text-white text-lg max-w-[550px]">
               {t("wallet.explanation.description")}
             </p>
           </div>
@@ -42,23 +43,30 @@ const WalletPage = () => {
             <h2 className="text-bhover text-4xl mb-10">
               {t("wallet.method.title")}
             </h2>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-              <CheckCircleIcon className="w-6 h-6 text-bhover" />
-              {t("wallet.method.para1")}
-            </p>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+            <Link
+              to={"https://www.eng-money.com/system/register"}
+              target="_blank"
+            >
+              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+                <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                {t("wallet.method.para1")}
+              </p>
+            </Link>
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-bhover" />
               {t("wallet.method.para2")}
             </p>
             <p
-              className={`text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3`}
+              className={`text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3`}
             >
               <CheckCircleIcon className="w-6 h-6 text-bhover" />
               <div className="max-sm:inline-block flex flex-row-reverse">
                 {t("wallet.method.para3")}
-                <span className="text-bhover text-base mx-1 text-right">
-                  {t("wallet.method.user")}
-                </span>
+                <a href="https://t.me/@ENG_MONEY_LTD" target="_blank">
+                  <span className="text-bhover text-base mx-1 text-right">
+                    {t("wallet.method.user")}
+                  </span>
+                </a>
               </div>
             </p>
           </div>
@@ -77,17 +85,17 @@ const WalletPage = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-between items-end">
-                <p className="text-white text- text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text- text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para1")}
                   <span className="text-bhover">$15,000</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para2")}
                   <span className="text-bhover">5%</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para3")}
                   <span className="text-bhover">25%</span>
@@ -114,17 +122,17 @@ const WalletPage = () => {
                 </div>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para1")}
                   <span className="text-bhover">$20,000</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para2")}
                   <span className="text-bhover">5%</span>
                 </p>
-                <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-bhover" />
                   {t("wallet.plans.para3")}
                   <span className="text-bhover">25%</span>

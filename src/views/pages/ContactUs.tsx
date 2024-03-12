@@ -15,54 +15,89 @@ const ContactUsPage = () => {
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-12 justify-between items-center pt-44 pb-12 text-center bg-contact`}
+      className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-contact`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlayContact bg-[#e7e7e74d] dark:bg-[#000000cc]" />
       <div className="mb-2">
         <h2 className="text-4xl text-center mb-4 text-yhover">
-          {t("contact.title")}
+          <span className="mark-zigzag">{t("contact.title")}</span>
         </h2>
       </div>
       <div className="flex flex-row justify-center gap-7">
-        <Link to={"/"} className="hover:scale-110 duration-200">
+        <Link
+          to={"https://facebook.com/ENG.MONEY.LTD"}
+          target="_blank"
+          className="hover:scale-110 duration-200"
+          title="Facebook"
+        >
           <img className="w-9" src={facebook} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
+        <Link
+          to={"https://instagram.com/eng_money_ltd"}
+          target="_blank"
+          className="hover:scale-110 duration-200"
+          title="Instagram"
+        >
           <img className="w-9" src={instagram} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
+        <Link
+          to={"https://whatsapp.com/channel/0029VaDjoncAojZ1c85qv327"}
+          target="_blank"
+          className="hover:scale-110 duration-200"
+          title="Whatsapp"
+        >
           <img className="w-9" src={whatsapp} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-9" src={twitter} alt="" />
+        <Link
+          target="_blank"
+          to={"https://twitter.com/eng_money_ltd"}
+          className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
+          title="Twitter"
+        >
+          <img className="w-7 dark:w-7" src={twitter} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
+        <Link
+          to={"https://t.me/ENG_MONEY_LTD_CHANNEL"}
+          target="_blank"
+          className="hover:scale-110 duration-200"
+          title="Telegram"
+        >
           <img className="w-9" src={telegram} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
+        <Link
+          to={"https://www.youtube.com/@Eng_Money"}
+          target="_blank"
+          className="hover:scale-110 duration-200"
+          title="Youtube"
+        >
           <img className="w-9" src={youtube} alt="" />
         </Link>
-        <Link to={"/"} className="hover:scale-110 duration-200">
-          <img className="w-9" src={tiktok} alt="" />
+        <Link
+          to={"https://tiktok.com/@eng_money_ltd"}
+          target="_blank"
+          className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
+          title="Tiktok"
+        >
+          <img className="w-7 dark:w-7" src={tiktok} alt="" />
         </Link>
       </div>
       <h3 className="text-white text-2xl">
         <span className="text-yhover">Email</span>: support@eng-money.com
       </h3>
       <div className="flex flex-row gap-5">
-        <a href="www.eng-money.com/system/regitser" target="_blank">
+        <a href="https://www.eng-money.com/system/register" target="_blank">
           <Button
             variant={"outline"}
-            className="px-6 text-white border-yhover yhover:bg-yhover duration-300"
+            className="px-6 text-black dark:text-white border-yhover hover:bg-yhover duration-300"
           >
             {t("contact.register")}
           </Button>
         </a>
-        <a href="www.eng-money.com/system/login">
+        <a href="https://www.eng-money.com/system/login" target="_blank">
           <Button
             variant={"outline"}
-            className="px-4 text-white border-yhover yhover:bg-yhover duration-300"
+            className="px-4 text-black dark:text-white border-yhover hover:bg-yhover duration-300"
           >
             {t("contact.login")}
           </Button>

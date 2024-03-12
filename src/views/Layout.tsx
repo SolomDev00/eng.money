@@ -9,8 +9,8 @@ const RootLayout = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.style.backgroundColor = darkMode ? "#fff" : "#080707";
     document.body.style.color = darkMode ? "#fff" : "#000";
+    document.body.style.backgroundColor = darkMode ? "#fff" : "#080707";
   };
 
   useEffect(() => {

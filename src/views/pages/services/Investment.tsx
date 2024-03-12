@@ -16,7 +16,7 @@ const InvestmentPage = () => {
   return (
     <section
       id="ivestment"
-      className={`flex flex-col gap-12 justify-between items-center pt-20 pb-12 text-center bg-ivestment`}
+      className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-ivestment`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlayIvestment bg-[#e7e7e74d] dark:bg-[#000000cc]" />
@@ -35,7 +35,7 @@ const InvestmentPage = () => {
             <h2 className="text-ghover text-4xl mb-10">
               {t("ivestment.explanation.title")}
             </h2>
-            <p className="text-white text-lg max-w-[550px]">
+            <p className="text-black dark:text-white text-lg max-w-[550px]">
               {t("ivestment.explanation.description")}
             </p>
           </div>
@@ -52,13 +52,13 @@ const InvestmentPage = () => {
             <h2 className="text-ghover text-4xl mb-5">
               {t("ivestment.date.title")}
             </h2>
-            <p className="text-white text-lg max-w-[550px mb-5">
+            <p className="text-black dark:text-white text-lg max-w-[550px mb-5">
               {t("ivestment.date.description")}
             </p>
             <h2 className="text-ghover text-4xl mb-5">
               {t("ivestment.date.title2")}
             </h2>
-            <p className="text-white text-lg max-w-[550px]">
+            <p className="text-black dark:text-white text-lg max-w-[550px]">
               {t("ivestment.date.description2")}
             </p>
           </div>
@@ -75,23 +75,23 @@ const InvestmentPage = () => {
             <h2 className="text-ghover text-4xl mb-10">
               {t("ivestment.method.title")}
             </h2>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
               {t("ivestment.method.para1")}
             </p>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
               {t("ivestment.method.para2")}
             </p>
-            <p className="text-white text-lg max-sm:text-base max-w-[800px] flex flex-row-reverse justify-start items-center gap-3">
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[800px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
               {t("ivestment.method.para3")}
             </p>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
               {t("ivestment.method.para4")}
             </p>
-            <p className="text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
+            <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
               <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
               {t("ivestment.method.para5")}
             </p>
@@ -684,7 +684,11 @@ const InvestmentPage = () => {
 
         <div className="w-full flex flex-col">
           <div className="mb-8">
-            <h2 className=" text-ghover text-left text-4xl mb-3">
+            <h2
+              className={`text-ghover text-4xl mb-3 ${
+                i18n.language === "ar" ? "text-right" : "text-left"
+              }`}
+            >
               {t("ivestment.info.title")}
             </h2>
             <hr />
@@ -701,27 +705,27 @@ const InvestmentPage = () => {
                   : "text-right items-start"
               } flex-col justify-between items-end gap-y-5`}
             >
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-10 h-10 text-ghover" />
                 {t("ivestment.info.para1")}
               </p>
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-6 h-6 text-ghover" />
                 {t("ivestment.info.para2")}
               </p>
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-5 h-5 text-ghover" />
                 {t("ivestment.info.para3")}
               </p>
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-10 h-10 text-ghover" />
                 {t("ivestment.info.para4")}
               </p>
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-7 h-7 text-ghover" />
                 {t("ivestment.info.para5")}
               </p>
-              <p className="text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
+              <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
                 <InformationCircleIcon className="w-7 h-7 text-ghover" />
                 {t("ivestment.info.para6")}
               </p>

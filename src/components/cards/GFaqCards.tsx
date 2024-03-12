@@ -20,7 +20,7 @@ const FaqCards = ({ question, answer }: IProps) => {
               >
                 <span
                   className={`text-lg duration-150 ${
-                    open ? "text-ghover" : "text-white"
+                    open ? "text-ghover" : "text-black dark:text-white"
                   }`}
                 >
                   {question}
@@ -31,7 +31,7 @@ const FaqCards = ({ question, answer }: IProps) => {
                   } h-6 w-6 text-ghover`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pb-2 pt-4 text-base text-gray-400">
+              <Disclosure.Panel className="px-4 pb-2 pt-4 text-base text-black/90 dark:text-gray-400">
                 {answer}
               </Disclosure.Panel>
             </>

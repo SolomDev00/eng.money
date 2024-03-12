@@ -4,6 +4,7 @@ import Button from "../../components/schema/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import video from "../../assets/landing.mp4";
+import LoadingSignal from "../../components/loading/signal";
 
 const SignalSection = () => {
   const [t, i18n] = useTranslation("global");
@@ -27,7 +28,7 @@ const SignalSection = () => {
           <h5 className="text-xl text-black dark:text-gray-400 w-[650px] text-center max-sm:text-base max-sm:w-[300px]">
             {t("home.signal.description")}
           </h5>
-          <Link to={"/signal"}>
+          <Link to={"/signal"} onClick={() => window.scrollTo(0, 0)}>
             <Button
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
@@ -39,6 +40,7 @@ const SignalSection = () => {
           </Link>
         </div>
       </div>
+      <LoadingSignal />
     </section>
   );
 };

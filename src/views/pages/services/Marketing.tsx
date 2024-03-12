@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Commission from "../../../assets/commission.png";
 import Network from "../../../assets/network.png";
 import Button from "../../../components/schema/Button";
+import { Link } from "react-router-dom";
 
 const MarketingPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -9,15 +10,15 @@ const MarketingPage = () => {
   return (
     <section
       id="signals"
-      className={`flex flex-col gap-12 justify-between items-center pt-32 pb-12 text-center bg-marketing`}
+      className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-marketing`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className="overlayMarketing bg-[#e7e7e74d] dark:bg-[#000000cc]" />
       <div className="mb-10">
-        <h2 className="text-4xl text-yhover mb-4">
-          {t("marketing.explanation.title")}
+        <h2 className="text-4xl text-yhover mb-5">
+          <span className="marky">{t("marketing.explanation.title")}</span>
         </h2>
-        <p className="text-lg text-white max-w-[625px]">
+        <p className="text-lg text-black dark:text-white max-w-[625px]">
           {t("marketing.explanation.description")}
         </p>
       </div>
@@ -37,10 +38,10 @@ const MarketingPage = () => {
                 i18n.language === "en" ? "text-left" : "text-right"
               }`}
             >
-              <p className="text-white mb-7 text-lg max-w-[550px] h-auto flex flex-row-reverse justify-start items-center gap-3">
+              <p className="text-black dark:text-white mb-7 text-lg max-w-[550px] h-auto flex flex-row-reverse justify-start items-center gap-3">
                 {t("marketing.plans.para1")}
               </p>
-              <p className="text-white text-lg max-w-[550px] h-auto flex flex-row-reverse justify-start items-center gap-3">
+              <p className="text-black dark:text-white text-lg max-w-[550px] h-auto flex flex-row-reverse justify-start items-center gap-3">
                 {t("marketing.plans.para2")}
               </p>
             </div>
@@ -59,20 +60,25 @@ const MarketingPage = () => {
                 i18n.language === "en" ? "text-left" : "text-right"
               }`}
             >
-              <p className="text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+              <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                 {t("marketing.plans.para3")}
               </p>
             </div>
           </div>
         </div>
         <div>
-          <Button
-            fullWidth
-            variant={"outline"}
-            className="px-10 border-yhover mt-6 hover:bg-yhover"
+          <Link
+            to={"https://www.eng-money.com/system/register"}
+            target="_blank"
           >
-            {t("marketing.btn")}
-          </Button>
+            <Button
+              fullWidth
+              variant={"outline"}
+              className="px-10 border-yhover mt-6 hover:bg-yhover"
+            >
+              {t("marketing.btn")}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
