@@ -2,9 +2,12 @@
   "navbar": {
     "home": "Home",
     "about": "About Us",
+    "achievements": "Achievements",
     "services": "Services",
     "faq": "FAQ",
     "contact": "Contact Us",
+    "toggle": "Dark / Light Mode",
+    "lang": "Language",
     "login": "Sign in",
     "register": "Join us",
     "investment": "Investment Plans",
@@ -237,6 +240,6 @@
   },
   "footer": {
     "title": "Your Money Is the Max .. Enjoy & Relax",
-    "copyrights": "Copyright © 2022 - 2024 ENG-MONEY.com. All rights reserved."
+    "copyrights": "Copyright 2022 - 2024 ENG MONEY. All rights reserved."
   }
 }

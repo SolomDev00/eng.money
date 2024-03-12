@@ -85,7 +85,12 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
         }`}
       >
         <div className="menu__bar">
-          <Link to="/" title="Home" aria-label="home" className="logo">
+          <Link
+            to="/"
+            title={t("navbar.home")}
+            aria-label="home"
+            className="logo"
+          >
             <img
               className={`${i18n.language === "en" ? "ml-0" : "ml-6"}`}
               src={!darkMode ? LogoDarkImg : LogoImg}
@@ -98,7 +103,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                 <Link
                   className="text-black dark:text-[#f9f9f9] duration-150"
                   to="/"
-                  title="Home"
+                  title={t("navbar.home")}
                 >
                   {t("navbar.home")}
                 </Link>
@@ -107,14 +112,24 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                 <Link
                   className="text-black dark:text-[#f9f9f9] duration-150"
                   to="/about-us"
-                  title="About Us"
+                  title={t("navbar.about")}
                 >
                   {t("navbar.about")}
                 </Link>
               </li>
               <li>
+                <Link
+                  className="text-black dark:text-[#f9f9f9] duration-150"
+                  to="/achievements"
+                  title={t("navbar.achievements")}
+                >
+                  {t("navbar.achievements")}
+                </Link>
+              </li>
+              <li>
                 <button
                   className="text-black dark:text-[#f9f9f9] duration-150"
+                  title={t("navbar.services")}
                   type="button"
                 >
                   {t("navbar.services")}
@@ -235,7 +250,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                 <Link
                   className="text-black dark:text-[#f9f9f9] duration-150"
                   to="/faq"
-                  title="FAQ"
+                  title={t("navbar.faq")}
                 >
                   {t("navbar.faq")}
                 </Link>
@@ -244,7 +259,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                 <Link
                   className="text-black dark:text-[#f9f9f9] duration-150"
                   to="/contact-us"
-                  title="CONTACT"
+                  title={t("navbar.contact")}
                 >
                   {t("navbar.contact")}
                 </Link>
@@ -259,6 +274,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
             }`}
           >
             <button
+              title={t("navbar.lang")}
               className={`language-button duration-100 ${
                 i18n.language === "en" ? "english" : "arabic"
               }`}
@@ -273,6 +289,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               )}
             </button>
             <Switch
+              title={t("navbar.toggle")}
               onClick={onClick}
               checked={darkMode}
               onChange={setDarkMode}
@@ -299,7 +316,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
           <div className="action-buttons hide">
             <a
               href="https://www.eng-money.com/system/login"
-              title="Log in"
+              title={t("navbar.login")}
               target="_blank"
               className="secondary text-black dark:text-[#f9f9f9] duration-150"
             >
@@ -307,7 +324,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
             </a>
             <a
               href="https://www.eng-money.com/system/register"
-              title="Sign up"
+              title={t("navbar.register")}
               target="_blank"
               className="primary"
             >
@@ -346,6 +363,15 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                       onClick={handleNavLinkClick}
                     >
                       {t("navbar.about")}
+                    </Link>
+                  </li>
+                  <li className="text-black text-xl hover:text-yhover duration-150">
+                    <Link
+                      to="/achievements"
+                      title="Achievements"
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.achievements")}
                     </Link>
                   </li>
                   <li className="text-black text-xl hover:text-yhover duration-150">

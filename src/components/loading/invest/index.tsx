@@ -4,7 +4,7 @@ const LoadingInvest = () => {
   return (
     <span
       className="Iloader border-black dark:border-white"
-      onClick={() => scrollTo(0, 1940)}
+      onClick={() => scrollTo(0, 1920)}
     ></span>
   );
 };
