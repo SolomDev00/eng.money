@@ -36,6 +36,7 @@ const FaqPage = () => {
           <GFaqCards
             question={t("faq.invest.Q1")}
             answer={t("faq.invest.A1")}
+            width="w-8 h-8"
           />
           <GFaqCards
             question={t("faq.invest.Q2")}

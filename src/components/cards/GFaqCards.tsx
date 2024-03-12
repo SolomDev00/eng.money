@@ -1,14 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 import { ReactNode } from "react";
 
 interface IProps {
   question: string;
   answer: string | ReactNode;
+  width?: string;
 }
 
-const FaqCards = ({ question, answer }: IProps) => {
+const FaqCards = ({ question, answer, width }: IProps) => {
   return (
     <div className="w-full pt-6">
       <div className={`w-full p-2 border-2 rounded-lg shadow-md border-ghover`}>
@@ -25,11 +26,15 @@ const FaqCards = ({ question, answer }: IProps) => {
                 >
                   {question}
                 </span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? "rotate-180 transform" : ""
-                  } h-6 w-6 text-ghover`}
-                />
+                {open ? (
+                  <ChevronUpIcon
+                    className={`transform h-6 w-6 text-ghover ${width}`}
+                  />
+                ) : (
+                  <ChevronDownIcon
+                    className={`transform h-6 w-6 text-ghover ${width}`}
+                  />
+                )}
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pb-2 pt-4 text-base text-black/90 dark:text-gray-400">
                 {answer}
