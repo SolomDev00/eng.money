@@ -1,5 +1,3 @@
-import moment from "moment";
-
 export const fadeIn = (direction: string, delay: number) => {
   return {
     hidden: {
@@ -62,27 +60,3 @@ export function slideInFromTop(delay: number) {
     },
   };
 }
-
-export const calculateTimeAgo = (dateString: string) => {
-  const now = moment();
-  const date = moment(dateString);
-  const duration = moment.duration(now.diff(date));
-
-  const years = Math.floor(duration.asYears());
-  const months = Math.floor(duration.asMonths());
-  const days = Math.floor(duration.asDays());
-  const hours = Math.floor(duration.asHours());
-  const minutes = Math.floor(duration.asMinutes());
-
-  if (years > 0) {
-    return `${years} years ago`;
-  } else if (months > 0) {
-    return `${months} months ago`;
-  } else if (days > 0) {
-    return `${days} days ago`;
-  } else if (hours > 0) {
-    return `${hours} hours ago`;
-  } else {
-    return `${minutes} minutes ago`;
-  }
-};
