@@ -33,6 +33,26 @@ interface IProps {
 const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      if (currentScrollPos > prevScrollPos) {
+        setScrolling(false);
+      } else {
+        setScrolling(true);
+      }
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,10 +63,14 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
       }
     };
     window.addEventListener("scroll", handleScroll);
+    if (firstLoad) {
+      setFirstLoad(false);
+      setScrolling(true);
+    }
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [firstLoad]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -67,11 +91,14 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
   return (
     <header
       className={`header ${
-        scrolling ? "bg-white dark:bg-black" : "text-transparent"
+        scrolling ? "bg-white dark:bg-black" : "bg-transparent"
       } duration-200 ${scrolling ? "bg-transparent" : "text-black"} ${
         showMenu ? "menu-open" : ""
       } ${i18n.language === "en" ? "en" : "ar"}`}
       style={{
+        display: `${scrolling === true ? "" : "none"}`,
+        background: `${window.scrollY < 10 ? "transparent" : ""}`,
+        animation: `${window.scrollY > 50 ? "fadeUpNav 0.4s ease-out" : ""}`,
         position: "fixed",
         top: 0,
         width: "100%",
@@ -83,6 +110,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
         className={`menu__wrapper duration-200 ${
           scrolling ? "bg-white dark:bg-black" : "text-transparent"
         }`}
+        style={{
+          background: `${window.scrollY < 10 ? "transparent" : ""}`,
+          animation: `${window.scrollY > 50 ? "fadeUpNav 0.4s ease-out" : ""}`,
+        }}
       >
         <div className="menu__bar">
           <Link

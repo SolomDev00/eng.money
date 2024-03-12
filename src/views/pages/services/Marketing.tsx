@@ -24,7 +24,7 @@ const MarketingPage = () => {
       </div>
       <div className="overlayMarketing dark:bg-[#000000cc]" />
       <div className="mb-10">
-        <h2 className="text-4xl text-yhover mb-5">
+        <h2 className="text-4xl text-yhover mb-7">
           <span className="marky">{t("marketing.explanation.title")}</span>
         </h2>
         <p className="text-lg text-black dark:text-white max-w-[625px]">

@@ -1,3 +1,4 @@
+import AchievementSection from "./website/AchievementSection";
 import HeroSection from "./website/HeroSection";
 import InvesetSection from "./website/InvestSection";
 import MarketingSection from "./website/MarketingSection";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <SignalSection />
       <WalletSection />
       <MarketingSection />
+      <AchievementSection />
     </div>
   );
 };

@@ -44,6 +44,11 @@
       "title": "Marketing",
       "description": "An additional opportunity for those who got marketing skills",
       "seeMore": "Learn more about Marketing"
+    },
+    "achievement": {
+      "title": "Our achievements in numbers",
+      "description": "Our goal is to support government institutions and companies and the private sector in the field of investment and educate small investors in these sectors and the importance of their role in preserving investors' funds from fraud and fraud and clarifying alternative investment opportunities offered in these sectors and attracting new investors to enter the world of investment under the umbrella of these sectors.",
+      "seeMore": "Learn more about Achievements"
     }
   },
   "about": {
@@ -237,6 +242,13 @@
       "para5": "The commission percentage is calculated from the value of the investor's capital without affecting the basic capital",
       "para6": "The commission is calculated as soon as the investor activates the package and can be directly withdrawal"
     }
+  },
+  "achievement": {
+    "title": "Achievements",
+    "description": "Some of our achievements in our last years such as withdrawals and deposits and the number of our subscribers within the company",
+    "deposits": "Total Deposits",
+    "investors": "Total Investors",
+    "withdrawals": "Total Withdrawals"
   },
   "footer": {
     "title": "Your Money Is the Max .. Enjoy & Relax",

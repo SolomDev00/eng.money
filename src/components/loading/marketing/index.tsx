@@ -4,7 +4,7 @@ const LoadingMarketing = () => {
   return (
     <span
       className="Mloader border-black dark:border-white"
-      onClick={() => scrollTo(0, 0)}
+      onClick={() => scrollTo(0, 4498)}
     ></span>
   );
 };

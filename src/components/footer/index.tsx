@@ -8,7 +8,7 @@ const Footer = () => {
   const [t, i18] = useTranslation("global");
 
   return (
-    <footer className="border-b-white bg-white dark:bg-black h-[18vh]">
+    <footer className="bg-white dark:bg-[#333] h-[18.5vh]">
       <div className="container">
         <div className="flex flex-row items-center justify-center mb-5 pt-5">
           <Link
@@ -36,9 +36,11 @@ const Footer = () => {
             )}
           </Link>
         </div>
-        <div className="border-t-[1px] border-black dark:border-white" />
+        <div className="w-full flex justify-center items-center">
+          <div className="border-t-[1px] border-black dark:border-white w-[600px]" />
+        </div>
         <div className="flex flex-row justify-center items-center pt-2 text-sm text-black dark:text-gray-400">
-          <h5 className="text-center">{t("footer.copyrights")}</h5>
+          <h5 className="text-center">&#169; {t("footer.copyrights")}</h5>
         </div>
       </div>
     </footer>

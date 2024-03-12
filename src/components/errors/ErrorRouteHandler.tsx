@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import BackgroundImg from "../../assets/landing.jpg";
 
 interface IProps {
   statusCode?: number;
@@ -9,7 +10,15 @@ const ErrorHandler = ({ statusCode = 500, title = "Server Error" }: IProps) => {
   const { pathname } = useLocation();
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center p-5 w-full">
+    <div className="fixed inset-0 flex items-center justify-center p-5 w-full bg-notfound">
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
       <div className="text-center">
         <div className="inline-flex rounded-full bg-red-100 p-4">
           <div className="rounded-full stroke-red-600 bg-red-200 p-4">
@@ -34,10 +43,10 @@ const ErrorHandler = ({ statusCode = 500, title = "Server Error" }: IProps) => {
             </svg>
           </div>
         </div>
-        <h2 className="mt-5 text-[36px] font-bold lg:text-[50px]">
+        <h2 className="mt-5 text-[36px] font-bold lg:text-[50px] text-white dark:text-white">
           {statusCode} - {title}
         </h2>
-        <p className="mt-5 lg:text-lg">
+        <p className="mt-5 lg:text-lg text-white dark:text-white">
           Oops something went wrong. Try to refresh this page or <br /> feel
           free to contact us if the problem presists.
         </p>

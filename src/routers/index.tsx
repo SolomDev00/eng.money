@@ -14,6 +14,7 @@ import WalletPage from "../views/pages/services/Wallet";
 import SignalPage from "../views/pages/services/Signals";
 import MarketingPage from "../views/pages/services/Marketing";
 import InvestmentPage from "../views/pages/services/Investment";
+import AchievementPage from "../views/pages/Achievements";
 
 const routers = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const routers = createBrowserRouter(
         <Route path="investment" element={<InvestmentPage />} />
         <Route path="faq" element={<FaqPage />} />
         <Route path="contact-us" element={<ContactUsPage />} />
+        <Route path="achievements" element={<AchievementPage />} />
       </Route>
 
       {/* Page Not Found */}

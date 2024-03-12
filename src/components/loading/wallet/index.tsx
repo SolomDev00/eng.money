@@ -4,7 +4,7 @@ const LoadingWallet = () => {
   return (
     <span
       className="Wloader border-black dark:border-white"
-      onClick={() => scrollTo(0, 4250)}
+      onClick={() => scrollTo(0, 3448)}
     ></span>
   );
 };

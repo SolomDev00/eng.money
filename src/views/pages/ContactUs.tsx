@@ -16,7 +16,7 @@ const ContactUsPage = () => {
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-12 justify-between items-center pt-72 pb-12 text-center bg-contact`}
+      className={`flex flex-col gap-12 justify-between items-center pt-72 pb-32 text-center bg-contact`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className={`video-background`}>

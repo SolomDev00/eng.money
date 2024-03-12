@@ -30,14 +30,14 @@ const InvestmentPage = () => {
         />
       </div>
       <div className="overlayIvestment dark:bg-[#000000cc]" />
-      <div className="mb-10">
+      <div className="mb-8">
         <img
-          className="w-56 cursor-pointer hidden dark:block"
+          className="w-72 cursor-pointer hidden dark:block"
           src={IvestmentImg}
           alt="ivestment"
         />
         <img
-          className="w-56 cursor-pointer dark:hidden"
+          className="w-72 cursor-pointer dark:hidden"
           src={IvestmentDarkImg}
           alt="ivestment"
         />
