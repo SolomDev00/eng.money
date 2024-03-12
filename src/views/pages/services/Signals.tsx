@@ -4,9 +4,11 @@ import Cyrbto from "../../../assets/bitcoin2.png";
 import Inclusive from "../../../assets/forex.png";
 import Forex from "../../../assets/change2.png";
 import SignalImg from "../../../assets/recommend.webp";
+import SignalDarkImg from "../../../assets/recommend02.webp";
 import SignalImg2 from "../../../assets/signals.webp";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Button from "../../../components/schema/Button";
+import BackgroundImg from "../../../assets/landing.jpg";
 
 const SignalPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -17,9 +19,26 @@ const SignalPage = () => {
       className={`flex flex-col gap-12 justify-between items-center pt-44 pb-12 text-center bg-signals`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
-      <div className="overlaySignals bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlaySignals dark:bg-[#000000cc]" />
       <div className="mb-10">
-        <img className="w-56 cursor-pointer" src={SignalImg} alt="signal" />
+        <img
+          className="w-56 cursor-pointer hidden dark:block"
+          src={SignalImg}
+          alt="signal"
+        />
+        <img
+          className="w-56 cursor-pointer dark:hidden"
+          src={SignalDarkImg}
+          alt="signal"
+        />
       </div>
       <div className="w-full flex flex-col  justify-between items-center gap-y-20">
         <div className="w-full flex flex-row-reverse max-sm:flex-col justify-between items-center gap-10">

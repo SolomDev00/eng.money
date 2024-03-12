@@ -2,8 +2,9 @@ import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import Button from "../../components/schema/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import video from "../../assets/landing.mp4";
 import LoadingSignal from "../../components/loading/signal";
+import video from "../../assets/landing.mp4";
+import BackgroundImg from "../../assets/landing.jpg";
 
 const SignalSection = () => {
   const [t, i18n] = useTranslation("global");
@@ -14,6 +15,12 @@ const SignalSection = () => {
       className={`flex flex-col justify-center items-center pt-64 pb-12 text-center`}
     >
       <div className="video-background">
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
         <video autoPlay muted loop id="video-background">
           <source src={video} type="video/mp4" />
         </video>

@@ -3,8 +3,8 @@ import "./Signal.style.css";
 const LoadingSignal = () => {
   return (
     <span
-      className="Sloader max-sm:hidden"
-      onClick={() => scrollTo(0, 3250)}
+      className="Sloader border-black dark:border-white"
+      onClick={() => scrollTo(0, 2700)}
     ></span>
   );
 };

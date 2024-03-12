@@ -8,6 +8,7 @@ import tiktok from "../../assets/media/tiktok_light.png";
 import whatsapp from "../../assets/media/whatsapp.png";
 import youtube from "../../assets/media/youtube.png";
 import Button from "../../components/schema/Button";
+import BackgroundImg from "../../assets/landing.jpg";
 
 const ContactUsPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -15,10 +16,18 @@ const ContactUsPage = () => {
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-contact`}
+      className={`flex flex-col gap-12 justify-between items-center pt-72 pb-12 text-center bg-contact`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayContact bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlayContact dark:bg-[#000000cc]" />
       <div className="mb-2">
         <h2 className="text-4xl text-center mb-4 text-yhover">
           <span className="mark-zigzag">{t("contact.title")}</span>
@@ -82,7 +91,7 @@ const ContactUsPage = () => {
           <img className="w-7 dark:w-7" src={tiktok} alt="" />
         </Link>
       </div>
-      <h3 className="text-white text-2xl">
+      <h3 className="text-black dark:text-white text-2xl">
         <span className="text-yhover">Email</span>: support@eng-money.com
       </h3>
       <div className="flex flex-row gap-5">

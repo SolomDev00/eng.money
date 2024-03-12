@@ -3,6 +3,7 @@ import Commission from "../../../assets/commission.png";
 import Network from "../../../assets/network.png";
 import Button from "../../../components/schema/Button";
 import { Link } from "react-router-dom";
+import BackgroundImg from "../../../assets/landing.jpg";
 
 const MarketingPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -13,7 +14,15 @@ const MarketingPage = () => {
       className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-marketing`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayMarketing bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlayMarketing dark:bg-[#000000cc]" />
       <div className="mb-10">
         <h2 className="text-4xl text-yhover mb-5">
           <span className="marky">{t("marketing.explanation.title")}</span>

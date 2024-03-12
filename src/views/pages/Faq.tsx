@@ -4,6 +4,7 @@ import OFaqCards from "../../components/cards/OFaqCards";
 import BFaqCards from "../../components/cards/BFaqCards";
 import YFaqCards from "../../components/cards/YFaqCards";
 import TablesPLN from "../../assets/plans_compare.webp";
+import BackgroundImg from "../../assets/landing.jpg";
 
 const FaqPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -13,7 +14,15 @@ const FaqPage = () => {
       className="w-full max-h-[200%] mt-44 bg-faq"
       dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayFaq bg-[#f9f9f94d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlayFaq dark:bg-[#000000cc]" />
       <div className="mb-2">
         <h2 className="text-4xl text-center mb-4 text-hover">
           <span className="mark-zigzag">{t("faq.title")}</span>

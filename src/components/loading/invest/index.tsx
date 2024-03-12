@@ -3,8 +3,8 @@ import "./Invest.style.css";
 const LoadingInvest = () => {
   return (
     <span
-      className="Iloader max-sm:hidden"
-      onClick={() => scrollTo(0, 2250)}
+      className="Iloader border-black dark:border-white"
+      onClick={() => scrollTo(0, 1940)}
     ></span>
   );
 };

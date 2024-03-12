@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
+import BackgroundImg from "../../../assets/landing.jpg";
 import InfoImg from "../../../assets/info_img.webp";
 import IvestmentImg from "../../../assets/investment.webp";
+import IvestmentDarkImg from "../../../assets/investment02.webp";
 import IvestmentImg2 from "../../../assets/business-funding.webp";
 import IvestmentImg3 from "../../../assets/growing-money.webp";
 import IvestmentImg4 from "../../../assets/business-investor.webp";
@@ -19,11 +21,24 @@ const InvestmentPage = () => {
       className={`flex flex-col gap-12 justify-between items-center pt-48 pb-12 text-center bg-ivestment`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayIvestment bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlayIvestment dark:bg-[#000000cc]" />
       <div className="mb-10">
         <img
-          className="w-56 cursor-pointer"
+          className="w-56 cursor-pointer hidden dark:block"
           src={IvestmentImg}
+          alt="ivestment"
+        />
+        <img
+          className="w-56 cursor-pointer dark:hidden"
+          src={IvestmentDarkImg}
           alt="ivestment"
         />
       </div>
@@ -122,14 +137,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">5%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -138,7 +153,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">10%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -165,14 +180,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">10%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -181,7 +196,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">15%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -208,14 +223,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">20%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -224,7 +239,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">30%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -252,14 +267,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">50%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -268,7 +283,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">70%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -307,14 +322,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">5%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -323,7 +338,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">15%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -350,14 +365,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">10%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -366,7 +381,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">20%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -393,14 +408,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">20%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -409,7 +424,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">40%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -438,14 +453,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">50%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -454,7 +469,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">90%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -498,14 +513,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">20%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -514,7 +529,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">60%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -546,14 +561,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">30%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -562,7 +577,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">70%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -594,14 +609,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-end">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">40%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -610,7 +625,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">100%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}
@@ -643,14 +658,14 @@ const InvestmentPage = () => {
                 </h4>
               </div>
               <div className={`flex flex-col justify-between items-end`}>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-end">
                     {t("ivestment.plans.para1")}
                     <span className="text-red-600 mx-[3px]">50%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div className="flex flex-row-reverse items-start">
                     {t("ivestment.plans.para2")}
@@ -659,7 +674,7 @@ const InvestmentPage = () => {
                     <span className="text-ghover mx-[3px]">130%</span>
                   </div>
                 </p>
-                <p className="text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
+                <p className="text-black dark:text-white text-base max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-ghover" />
                   <div>
                     {t("ivestment.plans.para4")}

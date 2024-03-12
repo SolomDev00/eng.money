@@ -3,8 +3,8 @@ import "./Screen.style.css";
 const LoadingScreen = () => {
   return (
     <span
-      className="loader max-sm:hidden"
-      onClick={() => scrollTo(0, 1150)}
+      className="loader border-black dark:border-white"
+      onClick={() => scrollTo(0, 1000)}
     ></span>
   );
 };

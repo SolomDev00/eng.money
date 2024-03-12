@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ownerImg from "../../assets/owner.webp";
+import BackgroundImg from "../../assets/landing.jpg";
 
 const AboutUsPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -14,12 +15,20 @@ const AboutUsPage = () => {
         <div className="w-[1300px] max-sm:w-[300px]">
           <img
             title="Engineer AbdulRahman Al-Semry"
-            className="w-full h-auto rounded-lg cursor-pointer shadow-md border-2 border-transparent dark:border-hover dark:border-2"
+            className="w-full h-auto rounded-lg cursor-pointer shadow-md border-2 border-yhover dark:border-yhover dark:border-2"
             src={ownerImg}
             alt="owner"
           />
         </div>
-        <div className="overlayAbout bg-[#bfbfbf4d] dark:bg-[#0b0b0bcc]" />
+        <div className={`video-background`}>
+          <img
+            id="video-background"
+            src={BackgroundImg}
+            alt="background"
+            className="dark:hidden"
+          />
+        </div>
+        <div className="overlayAbout dark:bg-[#0b0b0bcc]" />
         <div
           className={`flex flex-col justify-between items-center ${
             i18n.language === "en" ? "text-left" : "text-right"
@@ -27,7 +36,7 @@ const AboutUsPage = () => {
           dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
         >
           <div className="mb-6">
-            <h3 className="text-hover text-2xl mb-4">{t("about.owner")}</h3>
+            <h3 className="text-yhover text-2xl mb-4">{t("about.owner")}</h3>
             <p className="text-base text-black dark:text-white">
               {t("about.para1")}
             </p>
@@ -36,13 +45,15 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div className="mb-6">
-            <h3 className="text-hover text-2xl mb-4">{t("about.ourmisson")}</h3>
+            <h3 className="text-yhover text-2xl mb-4">
+              {t("about.ourmisson")}
+            </h3>
             <p className="text-base text-black dark:text-white">
               {t("about.para3")}
             </p>
           </div>
           <div className="mb-6">
-            <h3 className="text-hover text-2xl mb-4">{t("about.ourmsg")}</h3>
+            <h3 className="text-yhover text-2xl mb-4">{t("about.ourmsg")}</h3>
             <p className="text-base text-black dark:text-white">
               {t("about.para4")}
             </p>
@@ -62,7 +73,7 @@ const AboutUsPage = () => {
           dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
         >
           <div className="w-full text-center max-sm:text-justify mt-8 mb-10">
-            <h3 className="text-hover text-3xl mb-4">
+            <h3 className="text-yhover text-3xl mb-4">
               <span className="mark-zigzag">{t("about.ourhosts")}</span>
             </h3>
           </div>
@@ -73,7 +84,7 @@ const AboutUsPage = () => {
             dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
           >
             <div className="mb-6 max-w-[400px]">
-              <h3 className="text-hover text-2xl mb-4">{t("about.dubai")}</h3>
+              <h3 className="text-yhover text-2xl mb-4">{t("about.dubai")}</h3>
               <p className="text-base text-black dark:text-white">
                 {t("about.name")}
                 <span className="mx-[3px]">ENG MONEY CONSULTANCY - FZCO</span>
@@ -120,7 +131,7 @@ const AboutUsPage = () => {
             dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
           >
             <div className="mb-6">
-              <h3 className="text-hover text-2xl mb-4">{t("about.london")}</h3>
+              <h3 className="text-yhover text-2xl mb-4">{t("about.london")}</h3>
               <p className="text-base text-black dark:text-white">
                 {t("about.name")}
                 <span className="mx-[3px]">ENG MONEY LTD</span>

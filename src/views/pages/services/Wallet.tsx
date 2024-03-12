@@ -4,9 +4,11 @@ import Forex from "../../../assets/change.png";
 import WalletImg from "../../../assets/wallets.webp";
 import WalletImg2 from "../../../assets/wallets01.webp";
 import WalletImg3 from "../../../assets/wallets02.webp";
+import WalletDarkImg from "../../../assets/wallets03.webp";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Button from "../../../components/schema/Button";
 import { Link } from "react-router-dom";
+import BackgroundImg from "../../../assets/landing.jpg";
 
 const WalletPage = () => {
   const [t, i18n] = useTranslation("global");
@@ -17,9 +19,26 @@ const WalletPage = () => {
       className={`flex flex-col gap-12 justify-between items-center pt-40 pb-12 text-center bg-wallet`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
-      <div className="overlayWallet bg-[#e7e7e74d] dark:bg-[#000000cc]" />
+      <div className={`video-background`}>
+        <img
+          id="video-background"
+          src={BackgroundImg}
+          alt="background"
+          className="dark:hidden"
+        />
+      </div>
+      <div className="overlayWallet dark:bg-[#000000cc]" />
       <div className="mb-10">
-        <img className="w-56 cursor-pointer" src={WalletImg} alt="wallet" />
+        <img
+          className="w-56 cursor-pointer hidden dark:block"
+          src={WalletImg}
+          alt="wallet"
+        />
+        <img
+          className="w-56 cursor-pointer dark:hidden"
+          src={WalletDarkImg}
+          alt="wallet"
+        />
       </div>
 
       <div className="w-full flex flex-col justify-between items-center gap-y-20">
