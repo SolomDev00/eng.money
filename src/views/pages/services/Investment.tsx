@@ -51,10 +51,10 @@ const InvestmentPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-ghover text-4xl mb-10">
+              <h2 className="text-ghover text-4xl mb-10 max-sm:text-center">
                 {t("ivestment.explanation.title")}
               </h2>
-              <p className="text-black dark:text-white text-lg max-w-[550px]">
+              <p className="text-black dark:text-white text-lg max-w-[550px] max-sm:text-center">
                 {t("ivestment.explanation.description")}
               </p>
             </div>
@@ -70,17 +70,17 @@ const InvestmentPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-ghover text-4xl mb-5">
+              <h2 className="text-ghover text-4xl mb-5 max-sm:text-center">
                 {t("ivestment.date.title")}
               </h2>
-              <p className="text-black dark:text-white text-lg max-w-[550px mb-5">
+              <p className="text-black dark:text-white text-lg max-w-[550px] mb-5 max-sm:text-center">
                 {t("ivestment.date.description")}
               </p>
-              <h2 className="text-ghover text-4xl mb-5">
+              <h2 className="text-ghover text-4xl mb-5 max-sm:text-center">
                 {t("ivestment.date.title2")}
               </h2>
               <p
-                className={`text-black dark:text-white text-lg max-w-[580px] ${
+                className={`text-black dark:text-white text-lg max-w-[580px] max-sm:text-center ${
                   i18n.language === "en" ? "float-left" : "float-right"
                 }`}
               >
@@ -99,27 +99,27 @@ const InvestmentPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-ghover text-4xl mb-10">
+              <h2 className="text-ghover text-4xl mb-10 max-sm:text-center">
                 {t("ivestment.method.title")}
               </h2>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
+              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-6 text-ghover max-sm:mt-1" />
                 {t("ivestment.method.para1")}
               </p>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
+              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-6 text-ghover max-sm:mt-1" />
                 {t("ivestment.method.para2")}
               </p>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[800px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
+              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[800px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-6 text-ghover max-sm:mt-1" />
                 {t("ivestment.method.para3")}
               </p>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
+              <p className="text-black max-sm:ml-[2px] dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-[31px] text-ghover max-sm:mt-1" />
                 {t("ivestment.method.para4")}
               </p>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-ghover" />
+              <p className="text-black max-sm:ml-1 dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-[30px] text-ghover max-sm:mt-1" />
                 {t("ivestment.method.para5")}
               </p>
             </div>
@@ -733,27 +733,27 @@ const InvestmentPage = () => {
                 } flex-col justify-between items-end gap-y-5`}
               >
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-10 h-10 text-ghover" />
+                  <InformationCircleIcon className="w-10 h-10 max-sm:w-16 text-ghover" />
                   {t("ivestment.info.para1")}
                 </p>
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-6 h-6 text-ghover" />
+                  <InformationCircleIcon className="w-6 h-6 max-sm:w-9 text-ghover" />
                   {t("ivestment.info.para2")}
                 </p>
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-5 h-5 text-ghover" />
+                  <InformationCircleIcon className="w-5 h-5 max-sm:w-7 text-ghover" />
                   {t("ivestment.info.para3")}
                 </p>
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-10 h-10 text-ghover" />
+                  <InformationCircleIcon className="w-10 h-10 max-sm:w-16 text-ghover" />
                   {t("ivestment.info.para4")}
                 </p>
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-7 h-7 text-ghover" />
+                  <InformationCircleIcon className="w-7 h-7 max-sm:w-12 text-ghover" />
                   {t("ivestment.info.para5")}
                 </p>
                 <p className="text-black dark:text-white text-base max-w-[550px] w-full flex flex-row-reverse justify-start items-start gap-3">
-                  <InformationCircleIcon className="w-7 h-7 text-ghover" />
+                  <InformationCircleIcon className="w-7 h-7 max-sm:w-12 text-ghover" />
                   {t("ivestment.info.para6")}
                 </p>
               </div>

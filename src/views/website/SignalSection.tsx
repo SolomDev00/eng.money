@@ -12,7 +12,7 @@ const SignalSection = () => {
   return (
     <section
       id="signal"
-      className={`flex flex-col justify-center items-center pt-64 max-sm:pt-[360px] pb-12 text-center`}
+      className={`flex flex-col justify-center items-center pt-64 max-sm:pt-80 pb-20 text-center`}
     >
       <div className="video-background">
         <img

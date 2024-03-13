@@ -50,10 +50,10 @@ const WalletPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-bhover text-4xl mb-10">
+              <h2 className="text-bhover text-4xl mb-10 max-sm:text-center">
                 {t("wallet.explanation.title")}
               </h2>
-              <p className="text-black dark:text-white text-lg max-w-[550px]">
+              <p className="text-black dark:text-white text-lg max-w-[550px] max-sm:text-center">
                 {t("wallet.explanation.description")}
               </p>
             </div>
@@ -69,26 +69,26 @@ const WalletPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-bhover text-4xl mb-10">
+              <h2 className="text-bhover text-4xl mb-10 max-sm:text-center">
                 {t("wallet.method.title")}
               </h2>
               <Link
                 to={"https://www.eng-money.com/system/register"}
                 target="_blank"
               >
-                <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                  <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                  <CheckCircleIcon className="w-6 max-sm:mt-[2px] max-sm:w-7 text-bhover" />
                   {t("wallet.method.para1")}
                 </p>
               </Link>
-              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3">
-                <CheckCircleIcon className="w-6 h-6 max-sm:w-[18px] max-sm:h-[18px] text-bhover" />
+              <p className="text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3">
+                <CheckCircleIcon className="w-6 max-sm:w-[18px] max-sm:h-[18px] max-sm:mt-[2px] text-bhover" />
                 {t("wallet.method.para2")}
               </p>
               <p
-                className={`text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center gap-3`}
+                className={`text-black dark:text-white text-lg max-sm:text-base max-w-[600px] flex flex-row-reverse justify-start items-center max-sm:items-start gap-3`}
               >
-                <CheckCircleIcon className="w-6 h-6 text-bhover" />
+                <CheckCircleIcon className="w-6 max-sm:mt-[2px] max-sm:w-7 text-bhover" />
                 <div className="max-sm:inline-block flex flex-row-reverse">
                   {t("wallet.method.para3")}
                   <a href="https://t.me/@ENG_MONEY_LTD" target="_blank">

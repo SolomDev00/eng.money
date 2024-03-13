@@ -15,10 +15,10 @@ const ContactUsPage = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <div className="flex flex-col justify-between items-stretch gap-y-[2.8rem] lg:gap-y-[9.3rem]">
+    <div className="flex flex-col justify-between items-stretch gap-y-[2.8rem] max-sm:gap-y-[1.1rem] lg:gap-y-[9.3rem]">
       <section
         id="contact"
-        className={`container flex flex-col gap-12 justify-between items-center pt-72 pb-32 text-center bg-contact`}
+        className={`container flex flex-col gap-12 justify-between items-center pt-72 max-sm:pt-40 pb-12 text-center bg-contact`}
         dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
       >
         <div className={`video-background`}>

@@ -8,7 +8,7 @@ const Footer = () => {
   const [t, i18] = useTranslation("global");
 
   return (
-    <footer className="bg-white dark:bg-[#333] h-[17vh] max-sm:h-[21vh] xl:h-[15.5vh]">
+    <footer className="bg-white dark:bg-[#333] h-[17vh] max-sm:max-h-[21vh] max-sm:min-h-[21vh] xl:h-[15.5vh]">
       <div className="container">
         <div className="flex flex-row items-center justify-center mb-5 pt-5">
           <Link

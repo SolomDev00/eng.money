@@ -26,7 +26,7 @@ const FaqPage = () => {
         </div>
         <div className="overlayFaq dark:bg-[#000000cc]" />
         <div className="mb-2">
-          <h2 className="text-4xl text-center mb-4 text-hover">
+          <h2 className="text-4xl text-center mb-4 text-yhover">
             <span className="mark-zigzag">{t("faq.title")}</span>
           </h2>
         </div>

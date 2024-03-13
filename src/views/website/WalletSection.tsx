@@ -12,7 +12,7 @@ const WalletSection = () => {
   return (
     <section
       id="wallet"
-      className={`flex flex-col justify-center items-center pt-32 max-sm:pt-52 pb-2 text-center`}
+      className={`flex flex-col justify-center items-center pt-32 max-sm:pt-36 pb-2 text-center`}
     >
       <div className="video-background">
         <img

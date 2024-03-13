@@ -49,13 +49,13 @@ const SignalPage = () => {
                 i18n.language === "ar" ? "text-right" : "text-left"
               }`}
             >
-              <h2 className="text-ohover text-4xl mb-10">
+              <h2 className="text-ohover text-4xl mb-10 max-sm:text-center">
                 {t("signal.explanation.title")}
               </h2>
-              <p className="text-black dark:text-white text-lg max-w-[550px]">
+              <p className="text-black dark:text-white text-lg max-w-[550px] max-sm:text-center">
                 {t("signal.explanation.description")}
               </p>
-              <p className="text-black dark:text-white text-lg max-w-[550px]">
+              <p className="text-black dark:text-white text-lg max-w-[550px] max-sm:text-center">
                 {t("signal.explanation.description2")}
               </p>
             </div>

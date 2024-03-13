@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className={`flex flex-col justify-center items-center pt-64 pb-12 text-center`}
+      className={`flex flex-col justify-center items-center pt-64 max-sm:pt-52 pb-12 text-center`}
     >
       <div
         className={`video-background`}

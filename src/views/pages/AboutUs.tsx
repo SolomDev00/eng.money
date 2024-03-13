@@ -38,25 +38,29 @@ const AboutUsPage = () => {
             dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
           >
             <div className="mb-6">
-              <h3 className="text-yhover text-2xl mb-4">{t("about.owner")}</h3>
-              <p className="text-base text-black dark:text-white">
+              <h3 className="text-yhover text-2xl mb-4 max-sm:text-center">
+                {t("about.owner")}
+              </h3>
+              <p className="text-base text-black dark:text-white max-sm:text-center">
                 {t("about.para1")}
               </p>
-              <p className="text-base text-black dark:text-white">
+              <p className="text-base text-black dark:text-white max-sm:text-center">
                 {t("about.para2")}
               </p>
             </div>
             <div className="mb-6">
-              <h3 className="text-yhover text-2xl mb-4">
+              <h3 className="text-yhover text-2xl mb-4 max-sm:text-center">
                 {t("about.ourmisson")}
               </h3>
-              <p className="text-base text-black dark:text-white">
+              <p className="text-base text-black dark:text-white max-sm:text-center">
                 {t("about.para3")}
               </p>
             </div>
             <div className="mb-6">
-              <h3 className="text-yhover text-2xl mb-4">{t("about.ourmsg")}</h3>
-              <p className="text-base text-black dark:text-white">
+              <h3 className="text-yhover text-2xl mb-4 max-sm:text-center">
+                {t("about.ourmsg")}
+              </h3>
+              <p className="text-base text-black dark:text-white max-sm:text-center">
                 {t("about.para4")}
               </p>
             </div>
@@ -74,7 +78,7 @@ const AboutUsPage = () => {
             }`}
             dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
           >
-            <div className="w-full text-center max-sm:text-justify mt-8 mb-10">
+            <div className="w-full text-center mt-8 mb-10 max-sm:text-center">
               <h3 className="text-yhover text-3xl mb-4">
                 <span className="mark-zigzag">{t("about.ourhosts")}</span>
               </h3>
@@ -86,26 +90,26 @@ const AboutUsPage = () => {
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
             >
               <div className="mb-6">
-                <h3 className="text-yhover text-2xl mb-4">
+                <h3 className="text-yhover text-2xl mb-4 max-sm:text-center">
                   {t("about.dubai")}
                 </h3>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.name")}
                   <span className="mx-[3px]">ENG MONEY CONSULTANCY - FZCO</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.registerNum")}
                   <span className="mx-[3px]">DSO-FZCO-39940</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.licenseNum")}
                   <span className="mx-[3px]">42085</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.pobox")}
                   <span className="mx-[3px]">3420001, Dubai, United</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.address")}
                   <span className="mx-[3px]">
                     UnitedBuilding A1, Dubai Digital Park, Dubai Silicon Oasis,
@@ -134,18 +138,18 @@ const AboutUsPage = () => {
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
             >
               <div className="mb-6">
-                <h3 className="text-yhover text-2xl mb-4">
+                <h3 className="text-yhover text-2xl mb-4 max-sm:text-center">
                   {t("about.london")}
                 </h3>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.name")}
                   <span className="mx-[3px]">ENG MONEY LTD</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.companyNum")}
                   <span className="mx-[3px]">15438832</span>
                 </p>
-                <p className="text-base text-black dark:text-white">
+                <p className="text-base text-black dark:text-white max-sm:text-center">
                   {t("about.address")}
                   <span className="mx-[3px]">
                     128 City Road, London, United Kingdom EC1V 2NX
