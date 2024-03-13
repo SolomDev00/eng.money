@@ -21,8 +21,8 @@ export default function AnalyticsTabs() {
                 "w-full rounded-md py-2.5 font-medium leading-5 text-xl max-sm:text-base",
                 "ring-white/60 ring-offset-2 focus:outline-none focus:ring-2 border-2 border-transparent duration-150",
                 selected
-                  ? "bg-yhover text-black font-medium shadow-md border-yhover dark:border-transparent"
-                  : "bg-white hover:bg-yhover/90 hover:text-white text-black"
+                  ? "bg-[#6c35de] text-white font-medium shadow-md border-[#6c35de] dark:border-transparent"
+                  : "bg-white hover:bg-[#6c35de]/90 hover:text-white text-black"
               )
             }
           >
@@ -34,8 +34,8 @@ export default function AnalyticsTabs() {
                 "w-full rounded-md py-2.5 text-xl max-sm:text-base font-medium leading-5",
                 "ring-white/60 ring-offset-2 focus:outline-none focus:ring-2 border-2 border-transparent duration-150",
                 selected
-                  ? "bg-yhover text-black font-medium shadow-md border-yhover dark:border-transparent"
-                  : "bg-white hover:bg-yhover/90 hover:text-white text-black"
+                  ? "bg-[#6c35de] text-white font-medium shadow-md border-[#6c35de] dark:border-transparent"
+                  : "bg-white hover:bg-[#6c35de]/90 hover:text-white text-black"
               )
             }
           >
@@ -47,15 +47,15 @@ export default function AnalyticsTabs() {
                 "w-full rounded-md py-2.5 text-xl max-sm:text-base font-medium leading-5",
                 "ring-white/60 ring-offset-2 focus:outline-none focus:ring-2 border-2 border-transparent duration-150",
                 selected
-                  ? "bg-yhover text-black font-medium shadow-md border-yhover dark:border-transparent"
-                  : "bg-white hover:bg-yhover/90 hover:text-white text-black"
+                  ? "bg-[#6c35de] text-white font-medium shadow-md border-[#6c35de] dark:border-transparent"
+                  : "bg-white hover:bg-[#6c35de]/90 hover:text-white text-black"
               )
             }
           >
             {t("achievement.semi")}
           </Tab>
         </Tab.List>
-        <Tab.Panels className="mt-2 rounded-md">
+        <Tab.Panels className="mt-2 rounded-md min-h-[1470px]">
           <Tab.Panel
             className={classNames(
               "rounded-md bg-black/90 dark:bg-white p-3 dark:shadow-lg",
@@ -70,39 +70,57 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-ghover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-ghover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          5.5<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          8.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-ghover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          8.8<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -111,46 +129,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-ghover text-xl font-semibold">
-                        %210
+                      <span
+                        className={`text-ghover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        22.3<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-ghover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-ghover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-ghover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -163,39 +185,58 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-bhover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-bhover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          10.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          15.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-bhover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          16.5<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -204,46 +245,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-bhover text-xl font-semibold">
-                        %190
+                      <span
+                        className={`text-bhover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        41.5<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-bhover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-bhover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-bhover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -256,39 +301,57 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-yhover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-yhover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          21.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          30.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-yhover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          21.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -297,46 +360,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-yhover text-xl font-semibold">
-                        %205
+                      <span
+                        className={`text-yhover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        72.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-yhover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-yhover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-yhover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -349,39 +416,57 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-red-700 text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-red-700 text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          42.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          60.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-red-700 text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          18.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -390,46 +475,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-red-700 text-xl font-semibold">
-                        %225
+                      <span
+                        className={`text-red-700 text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        120.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-red-700 text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-red-700 text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-red-700 text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -451,39 +540,69 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          7.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-ghover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          11.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-ghover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          7.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          10.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-ghover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-ghover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          11.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -492,46 +611,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-ghover text-xl font-semibold">
-                        %210
+                      <span
+                        className={`text-ghover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        34.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-ghover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-ghover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-ghover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -544,39 +667,69 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          16.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-bhover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          19.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-bhover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          14.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          20.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-bhover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-bhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          22.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -585,46 +738,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-bhover text-xl font-semibold">
-                        %190
+                      <span
+                        className={`text-bhover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        91.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-bhover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-bhover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-bhover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -637,39 +794,69 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          19.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-yhover text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          29.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-yhover text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          28.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          40.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-yhover text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-yhover text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          28.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -678,46 +865,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-yhover text-xl font-semibold">
-                        %205
+                      <span
+                        className={`text-yhover text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        144.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-yhover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-yhover text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-yhover text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -730,39 +921,69 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Oct")} - 23</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          34.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-red-700 text-lg">%12</span>
+                        <p className="text-lg">{t("achievement.Nov")} - 23</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          60.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-red-700 text-lg">%14</span>
+                        <p className="text-lg">{t("achievement.Dec")} - 23</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          56.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jan")} - 24</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          80.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-red-700 text-lg">%11</span>
+                        <p className="text-lg">{t("achievement.Feb")} - 24</p>
+                        <span
+                          className={`text-red-700 text-lg ${
+                            i18n.language === "en" ? "" : "flex"
+                          }`}
+                        >
+                          24.0<span>%</span>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Mar")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -771,46 +992,50 @@ export default function AnalyticsTabs() {
                       <p className="text-xl font-semibold">
                         {t("achievement.total")}:
                       </p>
-                      <span className="text-red-700 text-xl font-semibold">
-                        %225
+                      <span
+                        className={`text-red-700 text-xl font-semibold ${
+                          i18n.language === "en" ? "" : "flex"
+                        }`}
+                      >
+                        254.0<span>%</span>
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-red-700 text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">{t("achievement.Apr")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
+                        <p className="text-lg">{t("achievement.May")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
+                        <p className="text-lg">{t("achievement.Jun")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-red-700 text-lg">%20</span>
+                        <p className="text-lg">{t("achievement.Jul")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
+                        <p className="text-lg">{t("achievement.Aug")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-red-700 text-lg">%18</span>
+                        <p className="text-lg">{t("achievement.Sep")} - 24</p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -832,39 +1057,19 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">
+                          {t("achievement.Mar")} ~ {t("achievement.May")} - 23
+                        </p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-ghover text-lg">%12</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-ghover text-lg">%14</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-ghover text-lg">%11</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
+                        <p className="text-lg">
+                          {t("achievement.Jun")} ~ {t("achievement.Aug")} - 23
+                        </p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -874,45 +1079,26 @@ export default function AnalyticsTabs() {
                         {t("achievement.total")}:
                       </p>
                       <span className="text-ghover text-xl font-semibold">
-                        %210
+                        0%
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-ghover text-lg">%15</span>
+                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
+                        <p className="text-lg">
+                          {t("achievement.Sep")} ~ {t("achievement.Oct")} - 23
+                        </p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-ghover text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-ghover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-ghover text-lg">%20</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-ghover text-lg">%13</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-ghover text-lg">%18</span>
+                        <p className="text-lg">
+                          {t("achievement.Nov")} - 23 ~ {t("achievement.Feb")} -
+                          23
+                        </p>
+                        <span className="text-ghover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -925,39 +1111,11 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-bhover text-lg">%12</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-bhover text-lg">%14</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-bhover text-lg">%11</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
+                        <p className="text-lg">
+                          {t("achievement.Mar")} ~ {t("achievement.Aug")} - 23
+                        </p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -967,45 +1125,18 @@ export default function AnalyticsTabs() {
                         {t("achievement.total")}:
                       </p>
                       <span className="text-bhover text-xl font-semibold">
-                        %190
+                        0%
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-bhover text-lg">%15</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-bhover text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-bhover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-bhover text-lg">%20</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-bhover text-lg">%13</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-bhover text-lg">%18</span>
+                        <p className="text-lg">
+                          {t("achievement.Sep")} - 23 ~ {t("achievement.Feb")} -
+                          24
+                        </p>
+                        <span className="text-bhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -1019,38 +1150,11 @@ export default function AnalyticsTabs() {
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-yhover text-lg">%12</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-yhover text-lg">%14</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-yhover text-lg">%11</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
+                        <p className="text-lg">
+                          {t("achievement.Mar")} -23 ~ {t("achievement.Nov")} -
+                          24
+                        </p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -1060,45 +1164,18 @@ export default function AnalyticsTabs() {
                         {t("achievement.total")}:
                       </p>
                       <span className="text-yhover text-xl font-semibold">
-                        %205
+                        0%
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-yhover text-lg">%15</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-yhover text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-yhover text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-yhover text-lg">%20</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-yhover text-lg">%13</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-yhover text-lg">%18</span>
+                        <p className="text-lg">
+                          {t("achievement.Dec")} -24 ~ {t("achievement.Aug")} -
+                          25
+                        </p>
+                        <span className="text-yhover text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -1111,39 +1188,12 @@ export default function AnalyticsTabs() {
                 <div className="w-full flex flex-row items-center justify-between gap-5">
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jan")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Feb")} / 23</p>
-                        <span className="text-red-700 text-lg">%12</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Mar")} / 23</p>
-                        <span className="text-red-700 text-lg">%14</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Apr")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.May")} / 23</p>
-                        <span className="text-red-700 text-lg">%11</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Jun")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
+                        <p className="text-lg">
+                          {t("achievement.Mar")} - 23 ~ {t("achievement.Mar")} -
+                          24
+                        </p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>
@@ -1153,45 +1203,18 @@ export default function AnalyticsTabs() {
                         {t("achievement.total")}:
                       </p>
                       <span className="text-red-700 text-xl font-semibold">
-                        %225
+                        0%
                       </span>
                     </div>
                   </div>
                   <div className="w-1/2">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
-                        <p className="text-lg">{t("achievement.Jul")} / 23</p>
-                        <span className="text-red-700 text-lg">%15</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Aug")} / 23</p>
-                        <span className="text-red-700 text-lg">%10</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Sep")} / 23</p>
-                        <span className="text-red-700 text-lg">%16</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Oct")} / 23</p>
-                        <span className="text-red-700 text-lg">%20</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Nov")} / 23</p>
-                        <span className="text-red-700 text-lg">%13</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-row justify-between border-b-[1px] pb-2">
-                      <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
-                        <p className="text-lg">{t("achievement.Dec")} / 23</p>
-                        <span className="text-red-700 text-lg">%18</span>
+                        <p className="text-lg">
+                          {t("achievement.Mar")} - 24 ~ {t("achievement.Mar")} -
+                          25
+                        </p>
+                        <span className="text-red-700 text-lg">-</span>
                       </div>
                     </div>
                   </div>

@@ -14,7 +14,7 @@ const AchievementPage = () => {
   return (
     <section
       id="achievement"
-      className={`flex flex-col gap-12 justify-between items-center pt-56 pb-20 text-center bg-achievement`}
+      className={`flex flex-col gap-12 justify-between items-center pt-56 pb- text-center bg-achievement`}
       dir={`${i18n.language === "ar" ? "ltr" : "rtl"}`}
     >
       <div className={`video-background`}>
@@ -27,7 +27,7 @@ const AchievementPage = () => {
       </div>
       <div className="overlayAchievement dark:bg-[#000000cc]" />
       <div className="mb-5">
-        <h2 className="text-4xl text-yhover mb-7">
+        <h2 className="text-4xl text-[#6c35de] mb-7">
           <span className="marky">{t("achievement.title")}</span>
         </h2>
         <p className="text-lg text-black dark:text-white max-w-[525px]">
