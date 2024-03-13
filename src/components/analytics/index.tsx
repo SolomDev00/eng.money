@@ -86,7 +86,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           5.5<span>%</span>
@@ -98,7 +98,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           8.0<span>%</span>
@@ -110,7 +110,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           8.8<span>%</span>
@@ -131,7 +131,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-ghover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         22.3<span>%</span>
@@ -201,7 +201,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           10.0<span>%</span>
@@ -213,7 +213,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           15.0<span>%</span>
@@ -226,7 +226,7 @@ export default function AnalyticsTabs() {
 
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           16.5<span>%</span>
@@ -247,7 +247,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-bhover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         41.5<span>%</span>
@@ -317,7 +317,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           21.0<span>%</span>
@@ -329,7 +329,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           30.0<span>%</span>
@@ -341,7 +341,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           21.0<span>%</span>
@@ -362,7 +362,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-yhover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         72.0<span>%</span>
@@ -432,7 +432,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           42.0<span>%</span>
@@ -444,7 +444,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           60.0<span>%</span>
@@ -456,7 +456,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           18.0<span>%</span>
@@ -477,7 +477,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-red-700 text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         120.0<span>%</span>
@@ -544,7 +544,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           7.0<span>%</span>
@@ -556,7 +556,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Nov")} - 23</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           11.0<span>%</span>
@@ -568,7 +568,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           7.0<span>%</span>
@@ -580,7 +580,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           10.0<span>%</span>
@@ -592,7 +592,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-ghover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           11.0<span>%</span>
@@ -613,7 +613,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-ghover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         34.0<span>%</span>
@@ -671,7 +671,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           16.0<span>%</span>
@@ -683,7 +683,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Nov")} - 23</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           19.0<span>%</span>
@@ -695,7 +695,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           14.0<span>%</span>
@@ -707,7 +707,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           20.0<span>%</span>
@@ -719,7 +719,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-bhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           22.0<span>%</span>
@@ -740,7 +740,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-bhover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         91.0<span>%</span>
@@ -798,7 +798,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           19.0<span>%</span>
@@ -810,7 +810,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Nov")} - 23</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           29.0<span>%</span>
@@ -822,7 +822,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           28.0<span>%</span>
@@ -834,7 +834,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           40.0<span>%</span>
@@ -846,7 +846,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-yhover text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           28.0<span>%</span>
@@ -867,7 +867,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-yhover text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         144.0<span>%</span>
@@ -925,7 +925,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           34.0<span>%</span>
@@ -937,7 +937,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Nov")} - 23</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           60.0<span>%</span>
@@ -949,7 +949,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Dec")} - 23</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           56.0<span>%</span>
@@ -961,7 +961,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Jan")} - 24</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           80.0<span>%</span>
@@ -973,7 +973,7 @@ export default function AnalyticsTabs() {
                         <p className="text-lg">{t("achievement.Feb")} - 24</p>
                         <span
                           className={`text-red-700 text-lg ${
-                            i18n.language === "en" ? "" : "flex"
+                            i18n.language === "en" ? "flex" : ""
                           }`}
                         >
                           24.0<span>%</span>
@@ -994,7 +994,7 @@ export default function AnalyticsTabs() {
                       </p>
                       <span
                         className={`text-red-700 text-xl font-semibold ${
-                          i18n.language === "en" ? "" : "flex"
+                          i18n.language === "en" ? "flex" : ""
                         }`}
                       >
                         254.0<span>%</span>
