@@ -52,7 +52,7 @@ const AchievementPage = () => {
                   i18n.language === "en" ? "text-left ml-4" : "text-right ml-0"
                 } text-black dark:text-white text-4xl mb-4`}
               >
-                $<CountUp end={54896} duration={9} />
+                $<CountUp end={54896} duration={6} />
               </h3>
               <p className="text-black/90 dark:text-gray-400 text-2xl pl-5">
                 {t("achievement.deposits")}
@@ -74,7 +74,7 @@ const AchievementPage = () => {
                 <CountUp
                   className={`${i18n.language === "en" ? "ml-5" : "ml-0"}`}
                   end={794}
-                  duration={5}
+                  duration={4}
                 />
               </h3>
               <p className="text-black/90 dark:text-gray-400 text-2xl pl-5">
@@ -95,7 +95,7 @@ const AchievementPage = () => {
                 } text-black dark:text-white text-4xl mb-4`}
               >
                 $
-                <CountUp end={62986} duration={9} />
+                <CountUp end={62986} duration={6} />
               </h3>
               <p className="text-black/90 dark:text-gray-400 text-2xl pl-5">
                 {t("achievement.withdrawals")}

@@ -69,7 +69,7 @@ const AboutUsPage = () => {
           dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
         >
           <div
-            className={`flex flex-col justify-between items-center ${
+            className={`w-full flex flex-col justify-between items-center ${
               i18n.language === "en" ? "text-left" : "text-right"
             }`}
             dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
@@ -80,12 +80,12 @@ const AboutUsPage = () => {
               </h3>
             </div>
             <div
-              className={`w-full flex flex-row max-sm:flex-col justify-between items-start mb-6 gap-32 lg:gap-[440px] max-sm:gap-10 ${
+              className={`w-full flex flex-row max-sm:flex-col justify-between items-start mb-6 gap-32 xl:gap-[440px] max-sm:gap-10 ${
                 i18n.language === "en" ? "text-left" : "text-right"
               }`}
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
             >
-              <div className="mb-6 max-w-[400px]">
+              <div className="mb-6">
                 <h3 className="text-yhover text-2xl mb-4">
                   {t("about.dubai")}
                 </h3>
