@@ -1,7 +1,7 @@
 {
-  "name": "efmhub.com",
-  "private": true,
-  "version": "0.0.0",
+  "name": "eng-money.com",
+  "private": false,
+  "version": "2.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

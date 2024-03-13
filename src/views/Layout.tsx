@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
 import { useEffect, useState } from "react";
 import HomeLoading from "../components/loading/home";
-import Footer from "../components/footer";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
@@ -34,10 +33,11 @@ const RootLayout = () => {
             setDarkMode={setDarkMode}
             onClick={toggleDarkMode}
           />
-          <div className="container">
-            <Outlet />
+          <div className="flex flex-col min-h-screen">
+            <div className="flex-grow">
+              <Outlet />
+            </div>
           </div>
-          <Footer />
         </>
       )}
     </div>

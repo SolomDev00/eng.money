@@ -53,21 +53,21 @@ const HeroSection = () => {
         <div className="overlay dark:bg-[#000000b3] " />
       </div>
       <div className="space-y-36 z-30">
-        <div className="flex flex-col justify-center items-center text-center space-y-8 max-sm:space-y-4">
-          <h3 className="text-5xl w-[860px] text-yhover font-medium max-sm:text-xl">
+        <div className="flex flex-col justify-center items-center text-center space-y-8 max-sm:space-y-4 max-sm:px-2">
+          <h3 className="text-5xl w-[860px] max-sm:w-full text-yhover font-medium max-sm:text-2xl">
             {t("home.hero.title")}
           </h3>
-          <h5 className="text-xl text-black dark:text-gray-200 w-[580px] text-center max-sm:text-base max-sm:w-[300px]">
+          <h5 className="text-xl text-black dark:text-gray-200 w-[580px] text-center max-sm:text-base max-sm:w-full">
             {t("home.hero.description")}
           </h5>
-          <div className="flex flex-row justify-center gap-7">
+          <div className="flex flex-row justify-center gap-7 max-sm:gap-3">
             <Link
               to={"https://facebook.com/ENG.MONEY.LTD"}
               target="_blank"
               className="hover:scale-110 duration-200"
               title="Facebook"
             >
-              <img className="w-9" src={facebook} alt="" />
+              <img className="w-9 max-sm:w-7" src={facebook} alt="" />
             </Link>
             <Link
               to={"https://instagram.com/eng_money_ltd"}
@@ -75,7 +75,7 @@ const HeroSection = () => {
               className="hover:scale-110 duration-200"
               title="Instagram"
             >
-              <img className="w-9" src={instagram} alt="" />
+              <img className="w-9 max-sm:w-7" src={instagram} alt="" />
             </Link>
             <Link
               to={"https://whatsapp.com/channel/0029VaDjoncAojZ1c85qv327"}
@@ -83,7 +83,7 @@ const HeroSection = () => {
               className="hover:scale-110 duration-200"
               title="Whatsapp"
             >
-              <img className="w-9" src={whatsapp} alt="" />
+              <img className="w-9 max-sm:w-7" src={whatsapp} alt="" />
             </Link>
             <Link
               target="_blank"
@@ -91,7 +91,11 @@ const HeroSection = () => {
               className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
               title="Twitter"
             >
-              <img className="w-7 dark:w-7" src={twitter} alt="" />
+              <img
+                className="w-7 dark:w-7 max-sm:w-5 max-sm:dark:w-5"
+                src={twitter}
+                alt=""
+              />
             </Link>
             <Link
               to={"https://t.me/ENG_MONEY_LTD_CHANNEL"}
@@ -99,7 +103,7 @@ const HeroSection = () => {
               className="hover:scale-110 duration-200"
               title="Telegram"
             >
-              <img className="w-9" src={telegram} alt="" />
+              <img className="w-9 max-sm:w-7" src={telegram} alt="" />
             </Link>
             <Link
               to={"https://www.youtube.com/@Eng_Money"}
@@ -107,7 +111,7 @@ const HeroSection = () => {
               className="hover:scale-110 duration-200"
               title="Youtube"
             >
-              <img className="w-9" src={youtube} alt="" />
+              <img className="w-9 max-sm:w-7" src={youtube} alt="" />
             </Link>
             <Link
               to={"https://tiktok.com/@eng_money_ltd"}
@@ -115,17 +119,21 @@ const HeroSection = () => {
               className="bg-black dark:bg-transparent p-1 rounded-md hover:scale-110 duration-200"
               title="Tiktok"
             >
-              <img className="w-7 dark:w-7" src={tiktok} alt="" />
+              <img
+                className="w-7 dark:w-7 max-sm:w-5 max-sm:dark:w-5"
+                src={tiktok}
+                alt=""
+              />
             </Link>
           </div>
           <Link to={"/about-us"} onClick={() => window.scrollTo(0, 0)}>
             <Button
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
-              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-yhover border-yhover border-2 max-sm:px-3 max-sm:text-base"
+              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-yhover border-yhover border-2 max-sm:px-3 max-sm:text-sm"
             >
               {t("home.hero.seeMore")}
-              <InformationCircleIcon className="h-7 w-7 text-black dark:text-white" />
+              <InformationCircleIcon className="w-7 max-sm:w-5 text-black dark:text-white" />
             </Button>
           </Link>
 

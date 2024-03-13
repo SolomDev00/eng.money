@@ -12,7 +12,7 @@ const WalletSection = () => {
   return (
     <section
       id="wallet"
-      className={`flex flex-col justify-center items-center pt-32 pb-2 text-center`}
+      className={`flex flex-col justify-center items-center pt-32 max-sm:pt-52 pb-2 text-center`}
     >
       <div className="video-background">
         <img
@@ -28,20 +28,20 @@ const WalletSection = () => {
       </div>
       <div className="space-y-36 z-30 mb-72">
         <div className="flex flex-col justify-center items-center text-center space-y-12 max-sm:space-y-4">
-          <h3 className="text-5xl text-[#0393b0] font-medium max-sm:text-4xl">
+          <h3 className="text-5xl text-[#0393b0] font-medium max-sm:text-3xl">
             {t("home.wallet.title")}
           </h3>
-          <h5 className="text-xl text-black dark:text-gray-400 w-[370px] text-center max-sm:text-lg max-sm:w-[350px]">
+          <h5 className="text-xl text-black dark:text-gray-400 w-[370px] text-center max-sm:text-lg max-sm:w-full">
             {t("home.wallet.description")}
           </h5>
           <Link to={"/wallet"} onClick={() => window.scrollTo(0, 0)}>
             <Button
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
-              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-[#0393b0] border-[#0393b0] border-2 max-sm:px-3 max-sm:text-base"
+              className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-[#0393b0] border-[#0393b0] border-2 max-sm:px-4 max-sm:text-sm"
             >
               {t("home.wallet.seeMore")}
-              <InformationCircleIcon className="h-7 w-7 text-black dark:text-white" />
+              <InformationCircleIcon className="w-7 max-sm:w-5 text-black dark:text-white" />
             </Button>
           </Link>
         </div>

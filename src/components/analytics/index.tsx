@@ -67,12 +67,14 @@ export default function AnalyticsTabs() {
                 <h4 className="text-ghover text-3xl mb-5 mark">
                   {t("achievement.d1")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
-                        <span className="text-ghover text-lg">-</span>
+                        <span className="text-ghover text-lg max-sm:text-sm">
+                          -
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
@@ -138,7 +140,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -182,8 +184,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-bhover text-3xl mb-5 markb">
                   {t("achievement.d2")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -254,7 +256,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -298,8 +300,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-yhover text-3xl mb-5 markyy">
                   {t("achievement.d3")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -369,7 +371,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -413,8 +415,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-red-700 text-3xl mb-5 markr">
                   {t("achievement.d4")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -484,7 +486,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -537,8 +539,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-ghover text-3xl mb-5 mark">
                   {t("achievement.d1")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -620,7 +622,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -664,8 +666,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-bhover text-3xl mb-5 markb">
                   {t("achievement.d2")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -747,7 +749,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -791,8 +793,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-yhover text-3xl mb-5 markyy">
                   {t("achievement.d3")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -874,7 +876,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -918,8 +920,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-red-700 text-3xl mb-5 markr">
                   {t("achievement.d4")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Oct")} - 23</p>
@@ -1001,7 +1003,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">{t("achievement.Apr")} - 24</p>
@@ -1045,7 +1047,7 @@ export default function AnalyticsTabs() {
           </Tab.Panel>
           <Tab.Panel
             className={classNames(
-              "rounded-md bg-black/90 dark:bg-white p-3 dark:shadow-lg",
+              "rounded-md bg-black/90 dark:bg-white p-3 dark:shadow-lg h-[1470px]",
               "focus:outline-none"
             )}
           >
@@ -1054,8 +1056,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-ghover text-3xl mb-5 mark">
                   {t("achievement.d5")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">
@@ -1083,7 +1085,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">
@@ -1108,8 +1110,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-bhover text-3xl mb-5 markb">
                   {t("achievement.d6")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">
@@ -1129,7 +1131,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">
@@ -1146,8 +1148,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-yhover text-3xl mb-5 markyy">
                   {t("achievement.d7")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
                         <p className="text-lg">
@@ -1168,7 +1170,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
                         <p className="text-lg">
@@ -1185,8 +1187,8 @@ export default function AnalyticsTabs() {
                 <h4 className="text-red-700 text-3xl mb-5 markr">
                   {t("achievement.d8")}
                 </h4>
-                <div className="w-full flex flex-row items-center justify-between gap-5">
-                  <div className="w-1/2">
+                <div className="w-full flex flex-row max-sm:flex-col items-center justify-between gap-5">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4 pt-2">
                         <p className="text-lg">
@@ -1207,7 +1209,7 @@ export default function AnalyticsTabs() {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 max-sm:w-full">
                     <div className="flex flex-row justify-between border-b-[1px] pb-2">
                       <div className="w-full flex flex-row justify-between items-center px-4">
                         <p className="text-lg">
