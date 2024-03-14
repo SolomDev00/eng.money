@@ -1,6 +1,7 @@
 import {
   Route,
-  createBrowserRouter,
+  // createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 import HomePage from "../views";
@@ -16,7 +17,7 @@ import MarketingPage from "../views/pages/services/Marketing";
 import InvestmentPage from "../views/pages/services/Investment";
 import AchievementPage from "../views/pages/Achievements";
 
-const routers = createBrowserRouter(
+const routers = createHashRouter(
   createRoutesFromElements(
     <>
       {/* Root Layout */}
