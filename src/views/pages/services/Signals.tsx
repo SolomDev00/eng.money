@@ -94,7 +94,7 @@ const SignalPage = () => {
                   <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                     <CheckCircleIcon className="w-6 h-6 text-ohover" />
                     {t("signal.plans.para2")}
-                    <span className="text-ohover">$1,000</span>
+                    <span className="text-ohover">$500</span>
                   </p>
                 </div>
                 <div className="flex justify-center items-center">
@@ -165,7 +165,7 @@ const SignalPage = () => {
                   <p className="text-black dark:text-white text-lg max-w-[550px] flex flex-row-reverse justify-start items-center gap-3">
                     <CheckCircleIcon className="w-6 h-6 text-ohover" />
                     {t("signal.plans.para2")}
-                    <span className="text-ohover">$500</span>
+                    <span className="text-ohover">$1,000</span>
                   </p>
                 </div>
                 <div className="flex justify-center items-center">

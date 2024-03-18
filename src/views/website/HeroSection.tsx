@@ -13,16 +13,10 @@ import video from "../../assets/landing.mp4";
 import { useEffect, useState } from "react";
 import LoadingScreen from "../../components/loading/screen";
 import BackgroundImg from "../../assets/landing.jpg";
-import PopUp from "../../components/Popup";
 
 const HeroSection = () => {
   const [t, i18n] = useTranslation("global");
   const [scrolling, setScrolling] = useState(false);
-  const [showPopUp, setShowPopUp] = useState(true);
-
-  const handleClosePopUp = () => {
-    setShowPopUp(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +37,6 @@ const HeroSection = () => {
       id="hero"
       className={`flex flex-col justify-center items-center pt-64 max-sm:pt-52 pb-12 text-center`}
     >
-      {showPopUp && <PopUp onClose={handleClosePopUp} />}
       <div
         className={`video-background`}
         style={{ top: scrolling ? "75px" : "0px" }}

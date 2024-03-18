@@ -45,13 +45,11 @@ const FeedbackPage = () => {
           >
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <div className="bg-background w-9 h-9 flex justify-center items-center rounded-md z-10">
-                  <img className="w-10 h-10" src={owner} alt="paypal" />
-                </div>
+                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
                 <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
               </div>
               <div className="mt-3 w-full">
-                <div className="w-[150px] mx-auto flex flex-row justify-between items-center gap-2">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
@@ -68,13 +66,11 @@ const FeedbackPage = () => {
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <div className="bg-background w-9 h-9 flex justify-center items-center rounded-md z-10">
-                  <img className="w-10 h-10" src={owner} alt="paypal" />
-                </div>
+                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
                 <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
               </div>
               <div className="mt-3 w-full">
-                <div className="w-[150px] mx-auto flex flex-row justify-between items-center gap-2">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
@@ -91,13 +87,11 @@ const FeedbackPage = () => {
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <div className="bg-background w-9 h-9 flex justify-center items-center rounded-md z-10">
-                  <img className="w-10 h-10" src={owner} alt="paypal" />
-                </div>
+                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
                 <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
               </div>
               <div className="mt-3 w-full">
-                <div className="w-[150px] mx-auto flex flex-row justify-between items-center gap-2">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
@@ -114,13 +108,11 @@ const FeedbackPage = () => {
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <div className="bg-background w-9 h-9 flex justify-center items-center rounded-md z-10">
-                  <img className="w-10 h-10" src={owner} alt="paypal" />
-                </div>
+                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
                 <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
               </div>
               <div className="mt-3 w-full">
-                <div className="w-[150px] mx-auto flex flex-row justify-between items-center gap-2">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />
                   <StarIcon className="text-yhover w-5 h-5" />

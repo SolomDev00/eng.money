@@ -15,7 +15,7 @@ const PopUp = ({ onClose }: any) => {
         <p className="text-black dark:text-black">{t("popup.title")}</p>
         <Link
           to={"https://www.eng-money.com/system/login"}
-          className="px-3 py-2 bg-yhover rounded-lg text-sm hover:bg-hover duration-300"
+          className="px-3 py-2 bg-yhover rounded-lg text-sm hover:bg-hover duration-300 text-center"
         >
           {t("popup.btn")}
         </Link>

@@ -159,7 +159,7 @@
       "title": "Plans",
       "d1": "Crypto",
       "d2": "Forex",
-      "para1": "Minimum capital is",
+      "para1": "Minimum capital",
       "para2": "Subscription fee",
       "para3": "Project percentage",
       "sub": "Subscribe Now"
@@ -177,7 +177,7 @@
       "d2": "2in1",
       "d3": "Forex",
       "para1": "Subscription fee",
-      "para2": "Minimum capital is",
+      "para2": "Minimum capital",
       "sub": "Subscribe Now"
     },
     "numbers": "Number of subscribers"
@@ -232,7 +232,7 @@
       "para1": "Risk ratio",
       "para2": "Profits ratio from",
       "para3": "to",
-      "para4": "Minimum capital is",
+      "para4": "Minimum capital",
       "btn": "Join now"
     },
     "info": {
