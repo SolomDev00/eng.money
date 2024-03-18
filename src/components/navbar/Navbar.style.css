@@ -54,7 +54,7 @@
   position: fixed;
   justify-content: space-between;
   z-index: 3000;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
   max-width: 60rem;
   padding: 0px 1rem;
@@ -84,7 +84,7 @@
   flex-direction: row;
   list-style-type: none;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .navigation > li {

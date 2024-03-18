@@ -15,9 +15,11 @@
     "signal": "Signal Trades",
     "signalD": "Best Signal Trades.",
     "wallet": "Wallet Management",
-    "walletD": "Optimal wallet management",
+    "walletD": "Optimal wallet management.",
     "marketing": "Marketing",
-    "marketingD": "Effectively market your product"
+    "marketingD": "Effectively market your product.",
+    "feedbacks": "Feedbacks",
+    "feedbacksD": "Feedbacks of our clients."
   },
   "home": {
     "hero": {
@@ -274,8 +276,15 @@
     "Dec": "Dec",
     "total": "Total"
   },
+  "feedbacks": {
+    "title": "Our Feedbacks"
+  },
   "footer": {
     "title": "Your Money Is the Max .. Enjoy & Relax",
     "copyrights": "Copyright 2022 - 2024 ENG MONEY. All rights reserved."
+  },
+  "popup": {
+    "title": "50% Discount on all Investment plans!!",
+    "btn": "Get Discount!"
   }
 }

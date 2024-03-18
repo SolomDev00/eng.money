@@ -16,6 +16,7 @@ import SignalPage from "../views/pages/services/Signals";
 import MarketingPage from "../views/pages/services/Marketing";
 import InvestmentPage from "../views/pages/services/Investment";
 import AchievementPage from "../views/pages/Achievements";
+import FeedbackPage from "../views/pages/Feedbacks";
 
 const routers = createHashRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const routers = createHashRouter(
         <Route path="faq" element={<FaqPage />} />
         <Route path="contact-us" element={<ContactUsPage />} />
         <Route path="achievements" element={<AchievementPage />} />
+        <Route path="feedbacks" element={<FeedbackPage />} />
       </Route>
 
       {/* Page Not Found */}

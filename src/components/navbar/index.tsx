@@ -15,6 +15,7 @@ import {
   Bars3BottomRightIcon,
   MegaphoneIcon,
   MoonIcon,
+  StarIcon,
   SunIcon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
@@ -157,6 +158,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                   {t("navbar.achievements")}
                 </Link>
               </li>
+
               <li>
                 <button
                   className="text-black dark:text-[#f9f9f9] duration-150"
@@ -270,6 +272,24 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                           <div className="item-title">
                             <h3>{t("navbar.marketing")}</h3>
                             <p>{t("navbar.marketingD")}</p>
+                          </div>
+                        </li>
+                      </Link>
+                      <Link
+                        to="/feedbacks"
+                        className="text-black dark:text-[#f9f9f9] duration-150"
+                      >
+                        <li>
+                          <div
+                            className={`${
+                              darkMode ? "icon-wrapper" : "icon-border"
+                            }`}
+                          >
+                            <StarIcon />
+                          </div>
+                          <div className="item-title">
+                            <h3>{t("navbar.feedbacks")}</h3>
+                            <p>{t("navbar.feedbacksD")}</p>
                           </div>
                         </li>
                       </Link>
