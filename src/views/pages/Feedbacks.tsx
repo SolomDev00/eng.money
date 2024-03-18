@@ -1,9 +1,14 @@
 import Slider from "react-slick";
-import owner from "../../assets/owner.jpeg";
-import BackgroundImg from "../../assets/landing.jpg";
 import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
 import { StarIcon } from "@heroicons/react/20/solid";
+import BackgroundImg from "../../assets/landing.jpg";
+import Man_1 from "../../assets/feedbacks/man_1.png";
+import Man_2 from "../../assets/feedbacks/man_2.png";
+import Man_3 from "../../assets/feedbacks/man_3.png";
+import Man_4 from "../../assets/feedbacks/man_4.png";
+import Man_5 from "../../assets/feedbacks/man_5.png";
+import Man_6 from "../../assets/feedbacks/man_6.png";
 
 const FeedbackPage = () => {
   const settings = {
@@ -45,8 +50,10 @@ const FeedbackPage = () => {
           >
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
-                <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
+                <img className="w-10 h-10 rounded-lg" src={Man_1} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Ahmed Samir
+                </h2>
               </div>
               <div className="mt-3 w-full">
                 <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
@@ -61,13 +68,15 @@ const FeedbackPage = () => {
                 ” Safe and reliable website and money is delivered! ”
               </p>
               <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
-                3/5/2020
+                2/10/2022
               </p>
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
-                <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
+                <img className="w-10 h-10 rounded-lg" src={Man_2} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Yousef Mahmoud
+                </h2>
               </div>
               <div className="mt-3 w-full">
                 <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
@@ -82,13 +91,15 @@ const FeedbackPage = () => {
                 ” Safe and reliable website and money is delivered! ”
               </p>
               <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
-                3/5/2020
+                17/12/2022
               </p>
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
-                <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
+                <img className="w-10 h-10 rounded-lg" src={Man_3} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Osama Amer
+                </h2>
               </div>
               <div className="mt-3 w-full">
                 <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
@@ -103,13 +114,15 @@ const FeedbackPage = () => {
                 ” Safe and reliable website and money is delivered! ”
               </p>
               <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
-                3/5/2020
+                4/11/2022
               </p>
             </div>
             <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
               <div className="silder">
-                <img className="w-10 h-10 rounded-lg" src={owner} alt="owner" />
-                <h2 className="text-xl text-black dark:text-white">Hotjar</h2>
+                <img className="w-10 h-10 rounded-lg" src={Man_4} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Abdel-Rahman Mohammed
+                </h2>
               </div>
               <div className="mt-3 w-full">
                 <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
@@ -124,7 +137,53 @@ const FeedbackPage = () => {
                 ” Safe and reliable website and money is delivered! ”
               </p>
               <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
-                3/5/2020
+                12/2/2023
+              </p>
+            </div>
+            <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
+              <div className="silder">
+                <img className="w-10 h-10 rounded-lg" src={Man_5} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Eslam Wael
+                </h2>
+              </div>
+              <div className="mt-3 w-full">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                </div>
+              </div>
+              <p className="mt-3 text-black/90 dark:text-white text-center">
+                ” Safe and reliable website and money is delivered! ”
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
+                3/1/2023
+              </p>
+            </div>
+            <div className="w-full border-2 border-yhover py-4 px-6 rounded-xl max-sm:rounded-md">
+              <div className="silder">
+                <img className="w-10 h-10 rounded-lg" src={Man_6} alt="owner" />
+                <h2 className="text-xl text-black dark:text-white">
+                  Karim Ismail
+                </h2>
+              </div>
+              <div className="mt-3 w-full">
+                <div className="w-[130px] mx-auto flex flex-row justify-between items-center gap-1">
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                  <StarIcon className="text-yhover w-5 h-5" />
+                </div>
+              </div>
+              <p className="mt-3 text-black/90 dark:text-white text-center">
+                ” Safe and reliable website and money is delivered! ”
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm flex justify-end items-end mt-3">
+                19/3/2023
               </p>
             </div>
           </Slider>
