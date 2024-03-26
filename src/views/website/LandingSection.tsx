@@ -48,17 +48,17 @@ const LandingSection = () => {
       </div>
       <div className="space-y-36 z-30">
         <div className="flex flex-col justify-center items-center text-center space-y-8 max-sm:space-y-4 max-sm:px-2">
-          <h3 className="text-5xl w-[860px] max-sm:w-full text-yhover font-medium max-sm:text-2xl">
+          <h3 className="text-5xl w-[860px] max-sm:w-full text-yhover font-medium max-sm:text-2xl mb-3">
             {t("home.hero.title")}
           </h3>
           <Countdown />
-          <Link to={"/about-us"} onClick={() => window.scrollTo(0, 0)}>
+          <Link to={"https://www.eng-money.com/system/login"} target="_blank" onClick={() => window.scrollTo(0, 0)}>
             <Button
               dir={`${i18n.language === "en" ? "ltr" : "rtl"}`}
               variant={"outline"}
               className="flex flex-row gap-2 py-2 px-6 rounded-md text-lg text-black dark:text-white hover:bg-yhover border-yhover border-2 max-sm:px-3 max-sm:text-sm"
             >
-              {t("home.hero.seeMore")}
+              {t("popup.btn")}
               <InformationCircleIcon className="w-7 max-sm:w-5 text-black dark:text-white" />
             </Button>
           </Link>
