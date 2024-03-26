@@ -10,7 +10,7 @@ export default function AnalyticsTabs() {
 
   return (
     <div
-      className="w-full px-2 py-12 sm:px-0"
+      className="w-full px-2 pb-44 sm:px-0"
       dir={i18n.language === "en" ? "ltr" : "rtl"}
     >
       <Tab.Group>

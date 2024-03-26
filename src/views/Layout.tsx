@@ -2,16 +2,16 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
 import { useEffect, useState } from "react";
 import HomeLoading from "../components/loading/home";
-import PopUp from "../components/Popup";
+// import PopUp from "../components/Popup";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
-  const [showPopUp, setShowPopUp] = useState(true);
+  // const [showPopUp, setShowPopUp] = useState(true);
 
-  const handleClosePopUp = () => {
-    setShowPopUp(false);
-  };
+  // const handleClosePopUp = () => {
+  //   setShowPopUp(false);
+  // };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -34,7 +34,7 @@ const RootLayout = () => {
         </div>
       ) : (
         <>
-          {showPopUp && <PopUp onClose={handleClosePopUp} />}
+          {/* {showPopUp && <PopUp onClose={handleClosePopUp} />} */}
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}

@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import BackgroundImg from "../../assets/landing.jpg";
-import {
-  ArrowDownTrayIcon,
-  ArrowUpTrayIcon,
-  UsersIcon,
-} from "@heroicons/react/20/solid";
-import CountUp from "react-countup";
+// import {
+//   ArrowDownTrayIcon,
+//   ArrowUpTrayIcon,
+//   UsersIcon,
+// } from "@heroicons/react/20/solid";
+// import CountUp from "react-countup";
 import AnalyticsTabs from "../../components/analytics";
 import Footer from "../../components/footer";
 
@@ -36,7 +36,7 @@ const AchievementPage = () => {
             {t("achievement.description")}
           </p>
         </div>
-        <div
+        {/* <div
           className={`flex ${
             i18n.language === "en" ? "flex-row" : "flex-row-reverse"
           } max-sm:flex-col justify-between items-center gap-7`}
@@ -103,7 +103,7 @@ const AchievementPage = () => {
             </div>
             <ArrowUpTrayIcon className="w-16 h-16 text-ghover dark:text-ghover hover:text-black dark:hover:text-white duration-300" />
           </div>
-        </div>
+        </div> */}
         <div className="w-full">
           <AnalyticsTabs />
         </div>

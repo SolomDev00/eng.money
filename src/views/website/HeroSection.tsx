@@ -54,6 +54,9 @@ const HeroSection = () => {
       </div>
       <div className="space-y-36 z-30">
         <div className="flex flex-col justify-center items-center text-center space-y-8 max-sm:space-y-4 max-sm:px-2">
+          <h2 dir="rtl" className="text-4xl text-black dark:text-white">
+            {t("popup.title")} *
+          </h2>
           <h3 className="text-5xl w-[860px] max-sm:w-full text-yhover font-medium max-sm:text-2xl">
             {t("home.hero.title")}
           </h3>
